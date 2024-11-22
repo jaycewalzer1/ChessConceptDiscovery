@@ -1,0 +1,18 @@
+from agents.alphazero.agent import AlphaZeroAgent
+from envs.chess.chess_env import ChessEnv
+from agents.alphazero.training import TrainingLoop
+import os
+
+def run_training():
+    # Initialize environment and agent
+    env = ChessEnv()
+    agent = AlphaZeroAgent(board_size=8, action_space=env.num_actions())
+    checkpoint_dir = "./logs/checkpoints"
+    os.makedirs(checkpoint_dir, exist_ok=True)
+    
+    # Run training loop
+    training_loop = TrainingLoop(agent, env, num_iterations=1000, checkpoint_dir=checkpoint_dir)
+    training_loop.run()
+
+if __name__ == "__main__":
+    run_training()

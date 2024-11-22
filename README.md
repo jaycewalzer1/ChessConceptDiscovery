@@ -1,3 +1,0 @@
-# ChessConceptDiscovery
-
-Test Git
