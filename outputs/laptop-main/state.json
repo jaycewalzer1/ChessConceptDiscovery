@@ -1,0 +1,57 @@
+{
+  "stages": {
+    "hardware": {
+      "status": "completed",
+      "elapsed_s": 0.005450583004858345,
+      "note": "completed"
+    },
+    "dependencies": {
+      "status": "completed",
+      "elapsed_s": 1.222149500004889,
+      "note": "completed"
+    },
+    "data": {
+      "status": "completed",
+      "elapsed_s": 393.80191704200115,
+      "note": "completed"
+    },
+    "model": {
+      "status": "completed",
+      "elapsed_s": 258.25369508400036,
+      "note": "completed"
+    },
+    "checks": {
+      "status": "completed",
+      "elapsed_s": 4.20559904199763,
+      "note": "43 passed in 3.67s"
+    },
+    "calibration": {
+      "status": "completed",
+      "elapsed_s": 570.3151675839981,
+      "note": "completed"
+    },
+    "protocol": {
+      "status": "completed",
+      "elapsed_s": 0.000312084004690405,
+      "note": "completed"
+    },
+    "evaluation": {
+      "status": "completed",
+      "elapsed_s": 3222.0119573750053,
+      "note": "3000 rows over 200 test positions"
+    },
+    "report": {
+      "status": "completed",
+      "elapsed_s": 3.4546782499965047,
+      "note": "completed"
+    },
+    "analysis": {
+      "status": "completed",
+      "elapsed_s": 0.0,
+      "note": "verdict: inconclusive"
+    }
+  },
+  "run_id": "laptop-main",
+  "finished_at": "2026-09-17T18:47:55-04:00",
+  "runtime_s": 4453.272609208994
+}

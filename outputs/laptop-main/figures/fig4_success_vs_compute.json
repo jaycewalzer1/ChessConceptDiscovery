@@ -1,0 +1,42 @@
+{
+  "primary_budget": 1024,
+  "points": {
+    "standard": {
+      "rate": 0.29,
+      "n": 200,
+      "mean_elapsed_s": 0.7827456625302511,
+      "mean_nn_evals": 499.475,
+      "mean_simulations": 1024.0,
+      "total_elapsed_s": 156.54913250605023
+    },
+    "quality": {
+      "rate": 0.29,
+      "n": 200,
+      "mean_elapsed_s": 0.978519074759788,
+      "mean_nn_evals": 677.33,
+      "mean_simulations": 1024.0,
+      "total_elapsed_s": 195.7038149519576
+    },
+    "random": {
+      "rate": 0.29,
+      "n": 200,
+      "mean_elapsed_s": 1.0020294824597296,
+      "mean_nn_evals": 701.1125,
+      "mean_simulations": 1024.0,
+      "total_elapsed_s": 200.4058964919459
+    },
+    "feature": {
+      "rate": 0.325,
+      "n": 200,
+      "mean_elapsed_s": 1.00008367203518,
+      "mean_nn_evals": 690.03,
+      "mean_simulations": 1024.0,
+      "total_elapsed_s": 200.01673440703598
+    }
+  },
+  "setup_overhead": {
+    "data_s": 393.80191704200115,
+    "training_s": 258.25369508400036,
+    "calibration_s": 570.3151675839981
+  }
+}

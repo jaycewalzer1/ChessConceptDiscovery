@@ -1,0 +1,12 @@
+[Event "ChessConceptDiscovery case case07"]
+[Site "laptop-main"]
+[Date "????.??.??"]
+[Round "?"]
+[White "White"]
+[Black "Black"]
+[Result "*"]
+[FEN "2k5/8/3R2K1/8/3Q4/8/8/8 w - - 2 2"]
+[SetUp "1"]
+[Annotator "exact forced-mate verifier"]
+
+2. Qg7 Kb8 3. Rd8# { verified forced mate in 2; complete solution set: d4g7, d6d7 } *

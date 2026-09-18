@@ -1,0 +1,9 @@
+# Tested on macOS 15 (Darwin 25.6.0, arm64, Apple M4 Max), CPU only,
+# CPython 3.12.5 in an isolated virtualenv created with `uv venv --python 3.12`.
+# TensorFlow does not publish wheels for CPython 3.13/3.14 at these versions.
+tensorflow==2.21.0
+numpy==2.1.3
+chess==1.11.2
+matplotlib==3.11.2
+scipy==1.18.1
+pytest==9.1.1

@@ -1,0 +1,49 @@
+{
+  "n_dev": 100,
+  "budget": 1024,
+  "diversity_grid": [
+    {
+      "diversity_weight": 0.0,
+      "n": 100,
+      "success_rate": 0.3,
+      "hits": 30
+    },
+    {
+      "diversity_weight": 0.25,
+      "n": 100,
+      "success_rate": 0.33,
+      "hits": 33
+    },
+    {
+      "diversity_weight": 0.5,
+      "n": 100,
+      "success_rate": 0.32,
+      "hits": 32
+    },
+    {
+      "diversity_weight": 0.75,
+      "n": 100,
+      "success_rate": 0.33,
+      "hits": 33
+    },
+    {
+      "diversity_weight": 1.0,
+      "n": 100,
+      "success_rate": 0.33,
+      "hits": 33
+    }
+  ],
+  "chosen_diversity_weight": 0.25,
+  "standard_success_rate": 0.26,
+  "standard_n": 100,
+  "selection_rule": "highest DEV success rate; ties broken toward the smaller lambda",
+  "scaler_descriptors": 4043,
+  "base_config": {
+    "screen_frac": 0.25,
+    "num_candidates": 4,
+    "pool_cap": 48,
+    "continuation_len": 4,
+    "c_puct": 1.5,
+    "max_plies": 40
+  }
+}

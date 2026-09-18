@@ -1,0 +1,12 @@
+[Event "ChessConceptDiscovery case case04"]
+[Site "laptop-main"]
+[Date "????.??.??"]
+[Round "?"]
+[White "White"]
+[Black "Black"]
+[Result "*"]
+[FEN "8/8/8/8/1R6/3R4/5K2/7k w - - 2 2"]
+[SetUp "1"]
+[Annotator "exact forced-mate verifier"]
+
+2. Rh4# { verified forced mate in 1; complete solution set: b4h4, d3h3 } *

@@ -1,0 +1,27 @@
+{
+  "path": "/Users/jaycewalzer/Desktop/ChessConceptDiscovery-work/ChessConceptDiscovery/outputs/laptop-main/checkpoints/frozen",
+  "weights_sha256": "f62131806f66ee904a69efcd2f27f3d1faf636865ce89466fe54ec8d03cfc01b",
+  "meta_sha256": "8c5202f66be26246792ff3cda2c1f56c26f4f60c1833e9dd4a9ef51e64c30f10",
+  "parameter_count": 5576661,
+  "arch": {
+    "trunk": "conv",
+    "channels": 64,
+    "blocks": 4,
+    "policy_channels": 4,
+    "value_hidden": 64,
+    "obs_shape": [
+      8,
+      8,
+      20
+    ],
+    "num_actions": 20480,
+    "encoding_version": "fromto-promo-v1",
+    "obs_version": "obs-20plane-v1"
+  },
+  "procedure": "supervised tactical bootstrapping on exactly-verified forced-mate solutions, followed by an AlphaZero-style self-play/MCTS fine-tuning stage; this is NOT tabula-rasa AlphaZero training",
+  "bootstrap_steps": 2580,
+  "bootstrap_records": 2695,
+  "selfplay_note": "240 self-play games, 3677 records",
+  "reload_reproduces_predictions": true,
+  "frozen_at": "2026-09-17T17:12:34-04:00"
+}

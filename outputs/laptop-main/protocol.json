@@ -1,0 +1,225 @@
+{
+  "research_question": "At a fixed search budget, does explicitly exploring candidate moves with different chess features help a small AlphaZero-style agent recover correct moves that its own initial policy ranks low?",
+  "creativity_definition": "Operational and narrow: discovering a solution that was initially unlikely under the agent's own policy but is verified correct by an exact oracle. No claim of novelty to humanity, artistic merit, or general creative intelligence.",
+  "primary_endpoint": "fraction of held-out test tasks where the selected root move is a member of the exactly-verified complete solution set",
+  "primary_comparison": "feature-diverse allocation vs standard PUCT, paired on positions",
+  "verdict_rule": "positive if the 95% family-clustered bootstrap CI of the paired difference lies entirely above zero; negative if entirely below; otherwise inconclusive",
+  "secondary_endpoints": [
+    "success restricted to positions whose every verified solution falls outside the common raw-policy top three (same denominator for all methods)",
+    "policy rank and probability of the selected correct move",
+    "success as a function of search budget",
+    "search time and network evaluations per solved task",
+    "candidate coverage and feature dispersion (mechanism diagnostics only)"
+  ],
+  "conditions": [
+    "standard",
+    "quality",
+    "random",
+    "feature"
+  ],
+  "budgets": [
+    256,
+    1024,
+    3072
+  ],
+  "primary_budget": 1024,
+  "allocation": {
+    "screen_frac": 0.25,
+    "num_candidates": 4,
+    "pool_cap": 48,
+    "continuation_len": 4,
+    "c_puct": 1.5,
+    "max_plies": 40,
+    "diversity_weight": 0.25
+  },
+  "random_seeds": [
+    0,
+    1
+  ],
+  "seed": 42,
+  "max_minutes": 120.0,
+  "profile": "laptop",
+  "feature_definitions": [
+    "d_material_pawn",
+    "d_material_knight",
+    "d_material_bishop",
+    "d_material_rook",
+    "d_material_queen",
+    "n_captures",
+    "n_checks",
+    "n_promotions",
+    "gives_check_immediate",
+    "is_capture_immediate",
+    "is_promotion_immediate",
+    "moved_piece_value",
+    "d_pawn_advancement",
+    "d_center_occupancy",
+    "d_kingside_occupancy",
+    "d_queenside_occupancy",
+    "d_own_mobility",
+    "d_opp_mobility",
+    "d_opp_king_ring_attacks",
+    "d_own_king_ring_attacks",
+    "d_open_files",
+    "d_minor_activity",
+    "sacrifice_proxy",
+    "continuation_length"
+  ],
+  "feature_normalisation": {
+    "fitted_on": "TRAIN + DEV descriptors only",
+    "stats": {
+      "feature_names": [
+        "d_material_pawn",
+        "d_material_knight",
+        "d_material_bishop",
+        "d_material_rook",
+        "d_material_queen",
+        "n_captures",
+        "n_checks",
+        "n_promotions",
+        "gives_check_immediate",
+        "is_capture_immediate",
+        "is_promotion_immediate",
+        "moved_piece_value",
+        "d_pawn_advancement",
+        "d_center_occupancy",
+        "d_kingside_occupancy",
+        "d_queenside_occupancy",
+        "d_own_mobility",
+        "d_opp_mobility",
+        "d_opp_king_ring_attacks",
+        "d_own_king_ring_attacks",
+        "d_open_files",
+        "d_minor_activity",
+        "sacrifice_proxy",
+        "continuation_length"
+      ],
+      "mean": [
+        0.003957457333663122,
+        0.002473410833539451,
+        0.0009893643334157804,
+        -0.0037101162503091764,
+        -0.0037101162503091764,
+        0.030175612169181302,
+        0.18822656443235222,
+        0.004699480583724957,
+        0.16596586693049717,
+        0.013356418501113035,
+        0.002968093000247341,
+        5.2067771456838985,
+        0.0009893643334157804,
+        -0.013851100667820925,
+        -0.03264902300272075,
+        0.04402671283700223,
+        -0.5953499876329459,
+        0.050704922087558744,
+        -0.24585703685382143,
+        -0.028444224585703684,
+        0.012367054167697254,
+        -0.002720751916893396,
+        -0.08162255750680188,
+        1.2446203314370516
+      ],
+      "std": [
+        0.1237719099771652,
+        0.05442403181587893,
+        0.07032668643761364,
+        0.10063408694334407,
+        0.07197498029066852,
+        0.184964500016831,
+        0.4057951415127261,
+        0.07191715812429872,
+        0.3720499938778385,
+        0.1147955773796899,
+        0.054399296173661606,
+        3.1289040636739958,
+        0.4101109091927064,
+        0.4946471667064214,
+        0.5387966569012128,
+        0.5120760935434994,
+        4.058135307816112,
+        1.1824219068968223,
+        1.1798055597783064,
+        0.570034326040856,
+        0.11703912439450681,
+        0.14325469425950538,
+        0.7802066223063587,
+        0.7968324771172545
+      ]
+    }
+  },
+  "budget_accounting": "Every condition is charged the full logical cost of the screening search it requires, even when one physical screen is reused; feature-computation wall time is added to the feature-diverse condition. No condition inherits another's search tree or any oracle result.",
+  "inclusion_criteria": "solver_status == 'ok' and a legal selected move",
+  "exclusion_criteria": "tasks whose exact solution set could not be completely enumerated",
+  "statistics": {
+    "resampling_unit": "source family (independent playout game or endgame seed)",
+    "bootstrap_replicates": 5000,
+    "interval": "95% percentile cluster bootstrap",
+    "seed_aggregation": "repeated seeds averaged within a position before comparison"
+  },
+  "example_selection_rule": "feature_win -> standard_win -> both_solved -> both_failed -> vs_random, up to 2 per category and 10 total, task-id order within a category",
+  "dataset": {
+    "split_unit": "source family (one playout game or one endgame construction seed)",
+    "test_split_hash": "d9e3bd70007ffc0e085879334b19449e1eae02bf89b7c2990e48fc12c6d36f50",
+    "dev_split_hash": "3c145cea2d4ee9c4129b9d1137f45ca544ee91f1c3b9747c3410992f076889dd",
+    "train_split_hash": "2d45bd6a55d2f11d02c391345c312fa73d8364958c8713ba29f593290e389b01",
+    "n_test": 2114
+  },
+  "checkpoint": {
+    "weights_sha256": "f62131806f66ee904a69efcd2f27f3d1faf636865ce89466fe54ec8d03cfc01b",
+    "parameter_count": 5576661,
+    "frozen": "the identical checkpoint is used for every condition"
+  },
+  "development_calibration": {
+    "n_dev": 100,
+    "budget": 1024,
+    "diversity_grid": [
+      {
+        "diversity_weight": 0.0,
+        "n": 100,
+        "success_rate": 0.3,
+        "hits": 30
+      },
+      {
+        "diversity_weight": 0.25,
+        "n": 100,
+        "success_rate": 0.33,
+        "hits": 33
+      },
+      {
+        "diversity_weight": 0.5,
+        "n": 100,
+        "success_rate": 0.32,
+        "hits": 32
+      },
+      {
+        "diversity_weight": 0.75,
+        "n": 100,
+        "success_rate": 0.33,
+        "hits": 33
+      },
+      {
+        "diversity_weight": 1.0,
+        "n": 100,
+        "success_rate": 0.33,
+        "hits": 33
+      }
+    ],
+    "chosen_diversity_weight": 0.25,
+    "standard_success_rate": 0.26,
+    "standard_n": 100,
+    "selection_rule": "highest DEV success rate; ties broken toward the smaller lambda",
+    "scaler_descriptors": 4043,
+    "base_config": {
+      "screen_frac": 0.25,
+      "num_candidates": 4,
+      "pool_cap": 48,
+      "continuation_len": 4,
+      "c_puct": 1.5,
+      "max_plies": 40
+    }
+  },
+  "no_test_tuning": "all hyper-parameters were fixed from development data before any test score was computed; no seed selection was performed",
+  "frozen_at": "2026-09-17T17:22:09-04:00",
+  "protocol_sha256": "a70206347872ff6c09554369d9e7bebb5dcec84e63f8c75cd00c09b4055008af"
+}

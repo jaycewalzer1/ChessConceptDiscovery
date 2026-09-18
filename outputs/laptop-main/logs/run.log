@@ -1,0 +1,413 @@
+[17:01:41] run_id=laptop-main profile=laptop seed=42 budget=120.0 min
+[17:01:41] output directory: /Users/jaycewalzer/Desktop/ChessConceptDiscovery-work/ChessConceptDiscovery/outputs/laptop-main
+[17:01:41] === stage hardware ===
+[17:01:41] === stage dependencies ===
+[17:01:42] [deps] python 3.12.5 | tensorflow 2.21.0 | numpy 2.1.3 | python-chess 1.11.2
+[17:01:42] [deps] accelerator: CPU only (no GPU/Metal device exposed to TensorFlow)
+[17:01:42] [deps] threads capped at 7 of 14
+[17:01:42] === stage data ===
+[17:01:45] [data] 25 tasks, 2s elapsed
+[17:01:46] [data] 50 tasks, 4s elapsed
+[17:01:48] [data] 75 tasks, 6s elapsed
+[17:01:50] [data] 100 tasks, 8s elapsed
+[17:01:52] [data] 125 tasks, 10s elapsed
+[17:01:53] [data] 150 tasks, 11s elapsed
+[17:01:54] [data] 175 tasks, 12s elapsed
+[17:01:56] [data] 200 tasks, 14s elapsed
+[17:01:58] [data] 225 tasks, 15s elapsed
+[17:02:00] [data] 250 tasks, 17s elapsed
+[17:02:01] [data] 275 tasks, 19s elapsed
+[17:02:03] [data] 300 tasks, 21s elapsed
+[17:02:05] [data] 325 tasks, 22s elapsed
+[17:02:06] [data] 350 tasks, 24s elapsed
+[17:02:08] [data] 375 tasks, 25s elapsed
+[17:02:10] [data] 400 tasks, 27s elapsed
+[17:02:11] [data] 425 tasks, 29s elapsed
+[17:02:15] [data] 475 tasks, 32s elapsed
+[17:02:16] [data] 500 tasks, 34s elapsed
+[17:02:18] [data] 525 tasks, 36s elapsed
+[17:02:20] [data] 550 tasks, 37s elapsed
+[17:02:23] [data] 600 tasks, 40s elapsed
+[17:02:25] [data] 625 tasks, 42s elapsed
+[17:02:27] [data] 650 tasks, 44s elapsed
+[17:02:28] [data] 675 tasks, 46s elapsed
+[17:02:32] [data] 725 tasks, 49s elapsed
+[17:02:33] [data] 750 tasks, 51s elapsed
+[17:02:35] [data] 775 tasks, 53s elapsed
+[17:02:37] [data] 800 tasks, 55s elapsed
+[17:02:39] [data] 850 tasks, 57s elapsed
+[17:02:41] [data] 875 tasks, 58s elapsed
+[17:02:43] [data] 900 tasks, 60s elapsed
+[17:02:44] [data] 925 tasks, 61s elapsed
+[17:02:46] [data] 950 tasks, 63s elapsed
+[17:02:47] [data] 975 tasks, 65s elapsed
+[17:02:49] [data] 1000 tasks, 66s elapsed
+[17:02:50] [data] 1025 tasks, 68s elapsed
+[17:02:53] [data] 1050 tasks, 70s elapsed
+[17:02:54] [data] 1075 tasks, 72s elapsed
+[17:02:56] [data] 1100 tasks, 74s elapsed
+[17:02:58] [data] 1125 tasks, 76s elapsed
+[17:03:00] [data] 1150 tasks, 77s elapsed
+[17:03:01] [data] 1175 tasks, 79s elapsed
+[17:03:03] [data] 1200 tasks, 80s elapsed
+[17:03:04] [data] 1225 tasks, 82s elapsed
+[17:03:08] [data] 1300 tasks, 86s elapsed
+[17:03:10] [data] 1325 tasks, 87s elapsed
+[17:03:12] [data] 1375 tasks, 90s elapsed
+[17:03:14] [data] 1400 tasks, 91s elapsed
+[17:03:15] [data] 1425 tasks, 93s elapsed
+[17:03:17] [data] 1450 tasks, 95s elapsed
+[17:03:18] [data] 1475 tasks, 96s elapsed
+[17:03:20] [data] 1500 tasks, 97s elapsed
+[17:03:21] [data] 1525 tasks, 99s elapsed
+[17:03:23] [data] 1550 tasks, 100s elapsed
+[17:03:25] [data] 1575 tasks, 102s elapsed
+[17:03:27] [data] 1600 tasks, 104s elapsed
+[17:03:29] [data] 1625 tasks, 106s elapsed
+[17:03:30] [data] 1650 tasks, 108s elapsed
+[17:03:33] [data] 1700 tasks, 111s elapsed
+[17:03:35] [data] 1725 tasks, 113s elapsed
+[17:03:37] [data] 1750 tasks, 115s elapsed
+[17:03:39] [data] 1775 tasks, 117s elapsed
+[17:03:45] [data] 1850 tasks, 122s elapsed
+[17:03:46] [data] 1875 tasks, 124s elapsed
+[17:03:50] [data] 1925 tasks, 127s elapsed
+[17:03:51] [data] 1950 tasks, 129s elapsed
+[17:03:55] [data] 2000 tasks, 133s elapsed
+[17:03:57] [data] 2025 tasks, 135s elapsed
+[17:03:59] [data] 2050 tasks, 136s elapsed
+[17:04:01] [data] 2075 tasks, 138s elapsed
+[17:04:02] [data] 2100 tasks, 139s elapsed
+[17:04:03] [data] 2125 tasks, 141s elapsed
+[17:04:05] [data] 2150 tasks, 142s elapsed
+[17:04:07] [data] 2200 tasks, 145s elapsed
+[17:04:10] [data] 2225 tasks, 147s elapsed
+[17:04:11] [data] 2250 tasks, 148s elapsed
+[17:04:12] [data] 2275 tasks, 150s elapsed
+[17:04:14] [data] 2300 tasks, 152s elapsed
+[17:04:16] [data] 2325 tasks, 154s elapsed
+[17:04:19] [data] 2375 tasks, 156s elapsed
+[17:04:21] [data] 2400 tasks, 158s elapsed
+[17:04:23] [data] 2425 tasks, 160s elapsed
+[17:04:24] [data] 2450 tasks, 162s elapsed
+[17:04:26] [data] 2475 tasks, 163s elapsed
+[17:04:28] [data] 2500 tasks, 165s elapsed
+[17:04:29] [data] 2525 tasks, 167s elapsed
+[17:04:32] [data] 2575 tasks, 169s elapsed
+[17:04:33] [data] 2600 tasks, 171s elapsed
+[17:04:35] [data] 2625 tasks, 173s elapsed
+[17:04:37] [data] 2650 tasks, 174s elapsed
+[17:04:38] [data] 2675 tasks, 176s elapsed
+[17:04:40] [data] 2700 tasks, 178s elapsed
+[17:04:41] [data] 2725 tasks, 179s elapsed
+[17:04:43] [data] 2750 tasks, 181s elapsed
+[17:04:45] [data] 2775 tasks, 182s elapsed
+[17:04:46] [data] 2800 tasks, 184s elapsed
+[17:04:47] [data] 2825 tasks, 185s elapsed
+[17:04:49] [data] 2850 tasks, 186s elapsed
+[17:04:51] [data] 2875 tasks, 188s elapsed
+[17:04:52] [data] 2900 tasks, 189s elapsed
+[17:04:53] [data] 2925 tasks, 191s elapsed
+[17:04:55] [data] 2950 tasks, 192s elapsed
+[17:04:57] [data] 2975 tasks, 195s elapsed
+[17:05:00] [data] 3000 tasks, 198s elapsed
+[17:05:01] [data] 3025 tasks, 199s elapsed
+[17:05:02] [data] 3050 tasks, 200s elapsed
+[17:05:05] [data] 3075 tasks, 202s elapsed
+[17:05:06] [data] 3100 tasks, 204s elapsed
+[17:05:09] [data] 3125 tasks, 206s elapsed
+[17:05:10] [data] 3150 tasks, 207s elapsed
+[17:05:13] [data] 3200 tasks, 211s elapsed
+[17:05:14] [data] 3225 tasks, 212s elapsed
+[17:05:15] [data] 3250 tasks, 213s elapsed
+[17:05:17] [data] 3275 tasks, 215s elapsed
+[17:05:19] [data] 3300 tasks, 217s elapsed
+[17:05:20] [data] 3325 tasks, 218s elapsed
+[17:05:22] [data] 3350 tasks, 219s elapsed
+[17:05:24] [data] 3375 tasks, 222s elapsed
+[17:05:26] [data] 3400 tasks, 223s elapsed
+[17:05:27] [data] 3425 tasks, 225s elapsed
+[17:05:29] [data] 3450 tasks, 226s elapsed
+[17:05:30] [data] 3475 tasks, 228s elapsed
+[17:05:33] [data] 3500 tasks, 230s elapsed
+[17:05:34] [data] 3525 tasks, 232s elapsed
+[17:05:36] [data] 3550 tasks, 234s elapsed
+[17:05:38] [data] 3575 tasks, 235s elapsed
+[17:05:40] [data] 3600 tasks, 237s elapsed
+[17:05:41] [data] 3625 tasks, 239s elapsed
+[17:05:43] [data] 3650 tasks, 240s elapsed
+[17:05:44] [data] 3675 tasks, 242s elapsed
+[17:05:47] [data] 3700 tasks, 244s elapsed
+[17:05:48] [data] 3725 tasks, 246s elapsed
+[17:05:51] [data] 3775 tasks, 249s elapsed
+[17:05:53] [data] 3800 tasks, 250s elapsed
+[17:05:54] [data] 3825 tasks, 252s elapsed
+[17:05:56] [data] 3850 tasks, 254s elapsed
+[17:05:57] [data] 3875 tasks, 255s elapsed
+[17:05:59] [data] 3900 tasks, 257s elapsed
+[17:06:01] [data] 3925 tasks, 259s elapsed
+[17:06:02] [data] 3950 tasks, 260s elapsed
+[17:06:04] [data] 3975 tasks, 261s elapsed
+[17:06:09] [data] 4050 tasks, 266s elapsed
+[17:06:11] [data] 4075 tasks, 268s elapsed
+[17:06:12] [data] 4100 tasks, 270s elapsed
+[17:06:13] [data] 4125 tasks, 271s elapsed
+[17:06:15] [data] 4150 tasks, 272s elapsed
+[17:06:16] [data] 4175 tasks, 274s elapsed
+[17:06:18] [data] 4200 tasks, 275s elapsed
+[17:06:20] [data] 4225 tasks, 277s elapsed
+[17:06:22] [data] 4250 tasks, 279s elapsed
+[17:06:23] [data] 4275 tasks, 281s elapsed
+[17:06:25] [data] 4300 tasks, 283s elapsed
+[17:06:27] [data] 4325 tasks, 284s elapsed
+[17:06:28] [data] 4350 tasks, 285s elapsed
+[17:06:29] [data] 4375 tasks, 287s elapsed
+[17:06:32] [data] 4425 tasks, 290s elapsed
+[17:06:34] [data] 4450 tasks, 291s elapsed
+[17:06:36] [data] 4475 tasks, 293s elapsed
+[17:06:37] [data] 4500 tasks, 294s elapsed
+[17:06:38] [data] 4525 tasks, 296s elapsed
+[17:06:41] [data] 4575 tasks, 298s elapsed
+[17:06:43] [data] 4600 tasks, 300s elapsed
+[17:06:44] [data] 4625 tasks, 302s elapsed
+[17:06:46] [data] 4650 tasks, 304s elapsed
+[17:06:50] [data] 4675 tasks, 307s elapsed
+[17:06:51] [data] 4700 tasks, 309s elapsed
+[17:06:53] [data] 4725 tasks, 311s elapsed
+[17:06:54] [data] 4750 tasks, 312s elapsed
+[17:06:56] [data] 4775 tasks, 313s elapsed
+[17:06:57] [data] 4800 tasks, 315s elapsed
+[17:06:59] [data] 4825 tasks, 317s elapsed
+[17:07:02] [data] 4850 tasks, 319s elapsed
+[17:07:03] [data] 4875 tasks, 321s elapsed
+[17:07:04] [data] 4900 tasks, 322s elapsed
+[17:07:06] [data] 4925 tasks, 324s elapsed
+[17:07:07] [data] 4950 tasks, 325s elapsed
+[17:07:08] [data] 4975 tasks, 326s elapsed
+[17:07:10] [data] 5000 tasks, 328s elapsed
+[17:07:12] [data] 5025 tasks, 329s elapsed
+[17:07:13] [data] 5050 tasks, 331s elapsed
+[17:07:15] [data] 5075 tasks, 333s elapsed
+[17:07:17] [data] 5100 tasks, 334s elapsed
+[17:07:18] [data] 5125 tasks, 336s elapsed
+[17:07:21] [data] 5175 tasks, 339s elapsed
+[17:07:23] [data] 5200 tasks, 340s elapsed
+[17:07:24] [data] 5225 tasks, 342s elapsed
+[17:07:27] [data] 5275 tasks, 344s elapsed
+[17:07:30] [data] 5325 tasks, 348s elapsed
+[17:07:33] [data] 5375 tasks, 351s elapsed
+[17:07:34] [data] 5400 tasks, 352s elapsed
+[17:07:37] [data] 5425 tasks, 355s elapsed
+[17:07:39] [data] 5450 tasks, 357s elapsed
+[17:07:41] [data] 5475 tasks, 359s elapsed
+[17:07:43] [data] 5500 tasks, 361s elapsed
+[17:07:45] [data] 5525 tasks, 362s elapsed
+[17:07:47] [data] 5550 tasks, 364s elapsed
+[17:07:48] [data] 5575 tasks, 366s elapsed
+[17:07:50] [data] 5600 tasks, 368s elapsed
+[17:07:53] [data] 5650 tasks, 370s elapsed
+[17:07:54] [data] 5675 tasks, 372s elapsed
+[17:07:56] [data] 5700 tasks, 373s elapsed
+[17:07:59] [data] 5750 tasks, 377s elapsed
+[17:08:02] [data] 5800 tasks, 379s elapsed
+[17:08:04] [data] 5825 tasks, 382s elapsed
+[17:08:06] [data] 5850 tasks, 384s elapsed
+[17:08:07] [data] 5875 tasks, 385s elapsed
+[17:08:08] [data] 5900 tasks, 386s elapsed
+[17:08:11] [data] 5925 tasks, 388s elapsed
+[17:08:12] [data] 5950 tasks, 390s elapsed
+[17:08:14] [data] 5975 tasks, 392s elapsed
+[17:08:16] [data] 6000 tasks, 394s elapsed
+[17:08:16] [data] generated 6000 tasks in 393.8s (3548 playout games, 4525 endgame seeds)
+[17:08:16] [data] train: 2695 positions / 2379 families, mate-in {'1': 853, '2': 1842}
+[17:08:16] [data] dev: 1191 positions / 1057 families, mate-in {'1': 378, '2': 813}
+[17:08:16] [data] test: 2114 positions / 1850 families, mate-in {'1': 692, '2': 1422}
+[17:08:16] === stage model ===
+[17:08:16] [model] bootstrap on 2695 verified training positions (5,576,661 parameters)
+[17:08:21] [bootstrap] epoch 1/60 loss=3.5049 policy=3.3778 value=0.0491
+[17:08:22] [bootstrap] epoch 2/60 loss=2.8971 policy=2.8199 value=0.0001
+[17:08:24] [bootstrap] epoch 3/60 loss=2.3726 policy=2.2837 value=0.0001
+[17:08:26] [bootstrap] epoch 4/60 loss=1.8544 policy=1.7523 value=0.0000
+[17:08:28] [bootstrap] epoch 5/60 loss=1.4271 policy=1.3122 value=0.0000
+[17:08:29] [bootstrap] epoch 6/60 loss=1.1403 policy=1.0153 value=0.0000
+[17:08:31] [bootstrap] epoch 7/60 loss=0.9724 policy=0.8411 value=0.0000
+[17:08:33] [bootstrap] epoch 8/60 loss=0.8782 policy=0.7439 value=0.0000
+[17:08:35] [bootstrap] epoch 9/60 loss=0.8344 policy=0.6997 value=0.0000
+[17:08:36] [bootstrap] epoch 10/60 loss=0.8182 policy=0.6846 value=0.0000
+[17:08:38] [bootstrap] epoch 11/60 loss=0.7937 policy=0.6614 value=0.0000
+[17:08:40] [bootstrap] epoch 12/60 loss=0.7951 policy=0.6642 value=0.0000
+[17:08:42] [bootstrap] epoch 13/60 loss=0.7954 policy=0.6661 value=0.0000
+[17:08:44] [bootstrap] epoch 14/60 loss=0.7958 policy=0.6681 value=0.0000
+[17:08:46] [bootstrap] epoch 15/60 loss=0.7922 policy=0.6663 value=0.0000
+[17:08:48] [bootstrap] epoch 16/60 loss=0.7858 policy=0.6614 value=0.0000
+[17:08:50] [bootstrap] epoch 17/60 loss=0.7791 policy=0.6564 value=0.0000
+[17:08:52] [bootstrap] epoch 18/60 loss=0.7891 policy=0.6681 value=0.0000
+[17:08:54] [bootstrap] epoch 19/60 loss=0.7778 policy=0.6583 value=0.0000
+[17:08:56] [bootstrap] epoch 20/60 loss=0.7716 policy=0.6536 value=0.0000
+[17:08:59] [bootstrap] epoch 21/60 loss=0.7700 policy=0.6536 value=0.0000
+[17:09:01] [bootstrap] epoch 22/60 loss=0.7722 policy=0.6571 value=0.0000
+[17:09:03] [bootstrap] epoch 23/60 loss=0.7730 policy=0.6590 value=0.0000
+[17:09:05] [bootstrap] epoch 24/60 loss=0.7655 policy=0.6530 value=0.0000
+[17:09:07] [bootstrap] epoch 25/60 loss=0.7512 policy=0.6409 value=0.0000
+[17:09:09] [bootstrap] epoch 26/60 loss=0.7604 policy=0.6521 value=0.0000
+[17:09:11] [bootstrap] epoch 27/60 loss=0.7548 policy=0.6480 value=0.0000
+[17:09:14] [bootstrap] epoch 28/60 loss=0.7527 policy=0.6476 value=0.0000
+[17:09:16] [bootstrap] epoch 29/60 loss=0.7459 policy=0.6420 value=0.0000
+[17:09:18] [bootstrap] epoch 30/60 loss=0.7424 policy=0.6398 value=0.0000
+[17:09:20] [bootstrap] epoch 31/60 loss=0.7525 policy=0.6517 value=0.0000
+[17:09:22] [bootstrap] epoch 32/60 loss=0.7567 policy=0.6573 value=0.0000
+[17:09:25] [bootstrap] epoch 33/60 loss=0.7529 policy=0.6547 value=0.0000
+[17:09:27] [bootstrap] epoch 34/60 loss=0.7384 policy=0.6413 value=0.0000
+[17:09:29] [bootstrap] epoch 35/60 loss=0.7462 policy=0.6509 value=0.0000
+[17:09:32] [bootstrap] epoch 36/60 loss=0.7430 policy=0.6492 value=0.0000
+[17:09:34] [bootstrap] epoch 37/60 loss=0.7264 policy=0.6339 value=0.0000
+[17:09:37] [bootstrap] epoch 38/60 loss=0.7344 policy=0.6431 value=0.0000
+[17:09:39] [bootstrap] epoch 39/60 loss=0.7219 policy=0.6320 value=0.0000
+[17:09:42] [bootstrap] epoch 40/60 loss=0.7331 policy=0.6447 value=0.0000
+[17:09:44] [bootstrap] epoch 41/60 loss=0.7232 policy=0.6361 value=0.0000
+[17:09:46] [bootstrap] epoch 42/60 loss=0.7227 policy=0.6368 value=0.0000
+[17:09:49] [bootstrap] epoch 43/60 loss=0.7329 policy=0.6481 value=0.0000
+[17:09:51] [bootstrap] epoch 44/60 loss=0.7240 policy=0.6401 value=0.0000
+[17:09:54] [bootstrap] epoch 45/60 loss=0.7219 policy=0.6393 value=0.0000
+[17:09:56] [bootstrap] epoch 46/60 loss=0.7212 policy=0.6398 value=0.0000
+[17:09:58] [bootstrap] epoch 47/60 loss=0.7120 policy=0.6318 value=0.0000
+[17:10:00] [bootstrap] epoch 48/60 loss=0.7164 policy=0.6375 value=0.0000
+[17:10:03] [bootstrap] epoch 49/60 loss=0.7131 policy=0.6353 value=0.0000
+[17:10:05] [bootstrap] epoch 50/60 loss=0.7136 policy=0.6369 value=0.0000
+[17:10:07] [bootstrap] epoch 51/60 loss=0.7011 policy=0.6255 value=0.0000
+[17:10:10] [bootstrap] epoch 52/60 loss=0.7054 policy=0.6310 value=0.0000
+[17:10:12] [bootstrap] epoch 53/60 loss=0.7064 policy=0.6329 value=0.0000
+[17:10:14] [bootstrap] epoch 54/60 loss=0.7071 policy=0.6347 value=0.0000
+[17:10:17] [bootstrap] epoch 55/60 loss=0.7029 policy=0.6313 value=0.0000
+[17:10:19] [bootstrap] epoch 56/60 loss=0.7000 policy=0.6290 value=0.0000
+[17:10:22] [bootstrap] epoch 57/60 loss=0.7023 policy=0.6321 value=0.0000
+[17:10:24] [bootstrap] epoch 58/60 loss=0.7103 policy=0.6409 value=0.0000
+[17:10:27] [bootstrap] epoch 59/60 loss=0.6931 policy=0.6248 value=0.0000
+[17:10:29] [bootstrap] epoch 60/60 loss=0.6912 policy=0.6241 value=0.0000
+[17:10:31] [selfplay] iter 1/40 games=6 buffer=43 loss=2.6875857412815094
+[17:10:32] [selfplay] iter 2/40 games=6 buffer=57 loss=1.7520465403795242
+[17:10:37] [selfplay] iter 3/40 games=6 buffer=178 loss=1.9996633157134056
+[17:10:40] [selfplay] iter 4/40 games=6 buffer=261 loss=1.8038366883993149
+[17:10:43] [selfplay] iter 5/40 games=6 buffer=333 loss=1.6926825270056725
+[17:10:48] [selfplay] iter 6/40 games=6 buffer=477 loss=1.6330905109643936
+[17:10:50] [selfplay] iter 7/40 games=6 buffer=544 loss=1.5416943058371544
+[17:10:53] [selfplay] iter 8/40 games=6 buffer=623 loss=1.4820600003004074
+[17:10:58] [selfplay] iter 9/40 games=6 buffer=739 loss=1.5385700538754463
+[17:11:00] [selfplay] iter 10/40 games=6 buffer=811 loss=1.4212363213300705
+[17:11:05] [selfplay] iter 11/40 games=6 buffer=932 loss=1.476732537150383
+[17:11:07] [selfplay] iter 12/40 games=6 buffer=980 loss=1.391705147922039
+[17:11:11] [selfplay] iter 13/40 games=6 buffer=1084 loss=1.406407967209816
+[17:11:15] [selfplay] iter 14/40 games=6 buffer=1192 loss=1.408934585750103
+[17:11:18] [selfplay] iter 15/40 games=6 buffer=1264 loss=1.4726855903863907
+[17:11:21] [selfplay] iter 16/40 games=6 buffer=1347 loss=1.4762461557984352
+[17:11:24] [selfplay] iter 17/40 games=6 buffer=1436 loss=1.4476114436984062
+[17:11:27] [selfplay] iter 18/40 games=6 buffer=1546 loss=1.4539939388632774
+[17:11:30] [selfplay] iter 19/40 games=6 buffer=1635 loss=1.4171657636761665
+[17:11:33] [selfplay] iter 20/40 games=6 buffer=1718 loss=1.361986868083477
+[17:11:36] [selfplay] iter 21/40 games=6 buffer=1789 loss=1.4067373797297478
+[17:11:38] [selfplay] iter 22/40 games=6 buffer=1855 loss=1.2999621331691742
+[17:11:42] [selfplay] iter 23/40 games=6 buffer=1978 loss=1.3178863003849983
+[17:11:44] [selfplay] iter 24/40 games=6 buffer=2034 loss=1.2855448797345161
+[17:11:46] [selfplay] iter 25/40 games=6 buffer=2141 loss=1.2238216400146484
+[17:11:50] [selfplay] iter 26/40 games=6 buffer=2270 loss=1.2371105551719666
+[17:11:53] [selfplay] iter 27/40 games=6 buffer=2355 loss=1.2275013402104378
+[17:11:55] [selfplay] iter 28/40 games=6 buffer=2436 loss=1.1817461177706718
+[17:11:58] [selfplay] iter 29/40 games=6 buffer=2517 loss=1.1960389763116837
+[17:12:01] [selfplay] iter 30/40 games=6 buffer=2625 loss=1.2472816854715347
+[17:12:04] [selfplay] iter 31/40 games=6 buffer=2700 loss=1.2266908437013626
+[17:12:07] [selfplay] iter 32/40 games=6 buffer=2821 loss=1.204605896025896
+[17:12:10] [selfplay] iter 33/40 games=6 buffer=2913 loss=1.2057320773601532
+[17:12:13] [selfplay] iter 34/40 games=6 buffer=3007 loss=1.2013826705515385
+[17:12:17] [selfplay] iter 35/40 games=6 buffer=3139 loss=1.191649667918682
+[17:12:21] [selfplay] iter 36/40 games=6 buffer=3252 loss=1.2111028507351875
+[17:12:25] [selfplay] iter 37/40 games=6 buffer=3389 loss=1.1575324423611164
+[17:12:28] [selfplay] iter 38/40 games=6 buffer=3494 loss=1.1894723176956177
+[17:12:31] [selfplay] iter 39/40 games=6 buffer=3579 loss=1.2126707956194878
+[17:12:34] [selfplay] iter 40/40 games=6 buffer=3677 loss=1.1842443235218525
+[17:12:34] [model] checkpoint reload reproduces predictions: True
+[17:12:34] === stage checks ===
+[17:12:34] [checks] running tests/test_core.py
+[17:12:39] [checks] 43 passed in 3.67s (exit 0)
+[17:12:39] === stage calibration ===
+[17:13:05] [calib] feature scaler fitted on 4043 TRAIN/DEV descriptors
+[17:15:54] [calib] lambda=0.0: 30/100 dev positions solved
+[17:17:26] [calib] lambda=0.25: 33/100 dev positions solved
+[17:18:59] [calib] lambda=0.5: 32/100 dev positions solved
+[17:20:34] [calib] lambda=0.75: 33/100 dev positions solved
+[17:22:09] [calib] lambda=1.0: 33/100 dev positions solved
+[17:22:09] [calib] frozen diversity weight lambda = 0.25
+[17:22:09] === stage protocol ===
+[17:22:09] [protocol] frozen, sha256=a70206347872ff6c...
+[17:22:09] === stage evaluation ===
+[17:22:21] [eval] budget 256: 10/200 positions, 50 rows, 99.3 min left
+[17:22:33] [eval] budget 256: 20/200 positions, 100 rows, 99.1 min left
+[17:22:47] [eval] budget 256: 30/200 positions, 150 rows, 98.9 min left
+[17:22:59] [eval] budget 256: 40/200 positions, 200 rows, 98.7 min left
+[17:23:11] [eval] budget 256: 50/200 positions, 250 rows, 98.5 min left
+[17:23:23] [eval] budget 256: 60/200 positions, 300 rows, 98.3 min left
+[17:23:36] [eval] budget 256: 70/200 positions, 350 rows, 98.1 min left
+[17:23:50] [eval] budget 256: 80/200 positions, 400 rows, 97.9 min left
+[17:24:03] [eval] budget 256: 90/200 positions, 450 rows, 97.6 min left
+[17:24:16] [eval] budget 256: 100/200 positions, 500 rows, 97.4 min left
+[17:24:29] [eval] budget 256: 110/200 positions, 550 rows, 97.2 min left
+[17:24:42] [eval] budget 256: 120/200 positions, 600 rows, 97.0 min left
+[17:24:54] [eval] budget 256: 130/200 positions, 650 rows, 96.8 min left
+[17:25:07] [eval] budget 256: 140/200 positions, 700 rows, 96.6 min left
+[17:25:19] [eval] budget 256: 150/200 positions, 750 rows, 96.4 min left
+[17:25:32] [eval] budget 256: 160/200 positions, 800 rows, 96.1 min left
+[17:25:46] [eval] budget 256: 170/200 positions, 850 rows, 95.9 min left
+[17:25:58] [eval] budget 256: 180/200 positions, 900 rows, 95.7 min left
+[17:26:11] [eval] budget 256: 190/200 positions, 950 rows, 95.5 min left
+[17:26:23] [eval] budget 256: 200/200 positions, 1000 rows, 95.3 min left
+[17:26:23] [eval] budget 256 complete
+[17:27:08] [eval] budget 1024: 10/200 positions, 1050 rows, 94.6 min left
+[17:27:51] [eval] budget 1024: 20/200 positions, 1100 rows, 93.8 min left
+[17:28:37] [eval] budget 1024: 30/200 positions, 1150 rows, 93.1 min left
+[17:29:16] [eval] budget 1024: 40/200 positions, 1200 rows, 92.4 min left
+[17:30:00] [eval] budget 1024: 50/200 positions, 1250 rows, 91.7 min left
+[17:30:35] [eval] budget 1024: 60/200 positions, 1300 rows, 91.1 min left
+[17:31:17] [eval] budget 1024: 70/200 positions, 1350 rows, 90.4 min left
+[17:32:06] [eval] budget 1024: 80/200 positions, 1400 rows, 89.6 min left
+[17:32:49] [eval] budget 1024: 90/200 positions, 1450 rows, 88.9 min left
+[17:33:30] [eval] budget 1024: 100/200 positions, 1500 rows, 88.2 min left
+[17:34:13] [eval] budget 1024: 110/200 positions, 1550 rows, 87.5 min left
+[17:34:49] [eval] budget 1024: 120/200 positions, 1600 rows, 86.9 min left
+[17:35:26] [eval] budget 1024: 130/200 positions, 1650 rows, 86.3 min left
+[17:36:09] [eval] budget 1024: 140/200 positions, 1700 rows, 85.5 min left
+[17:36:49] [eval] budget 1024: 150/200 positions, 1750 rows, 84.9 min left
+[17:37:27] [eval] budget 1024: 160/200 positions, 1800 rows, 84.2 min left
+[17:38:01] [eval] budget 1024: 170/200 positions, 1850 rows, 83.7 min left
+[17:38:42] [eval] budget 1024: 180/200 positions, 1900 rows, 83.0 min left
+[17:39:20] [eval] budget 1024: 190/200 positions, 1950 rows, 82.4 min left
+[17:39:59] [eval] budget 1024: 200/200 positions, 2000 rows, 81.7 min left
+[17:39:59] [eval] budget 1024 complete
+[17:41:39] [eval] budget 3072: 10/200 positions, 2050 rows, 80.0 min left
+[17:43:19] [eval] budget 3072: 20/200 positions, 2100 rows, 78.4 min left
+[17:45:15] [eval] budget 3072: 30/200 positions, 2150 rows, 76.4 min left
+[17:46:47] [eval] budget 3072: 40/200 positions, 2200 rows, 74.9 min left
+[17:48:39] [eval] budget 3072: 50/200 positions, 2250 rows, 73.0 min left
+[17:50:12] [eval] budget 3072: 60/200 positions, 2300 rows, 71.5 min left
+[17:51:55] [eval] budget 3072: 70/200 positions, 2350 rows, 69.8 min left
+[17:53:47] [eval] budget 3072: 80/200 positions, 2400 rows, 67.9 min left
+[17:55:31] [eval] budget 3072: 90/200 positions, 2450 rows, 66.2 min left
+[17:57:11] [eval] budget 3072: 100/200 positions, 2500 rows, 64.5 min left
+[17:59:08] [eval] budget 3072: 110/200 positions, 2550 rows, 62.6 min left
+[18:00:47] [eval] budget 3072: 120/200 positions, 2600 rows, 60.9 min left
+[18:02:30] [eval] budget 3072: 130/200 positions, 2650 rows, 59.2 min left
+[18:04:41] [eval] budget 3072: 140/200 positions, 2700 rows, 57.0 min left
+[18:06:35] [eval] budget 3072: 150/200 positions, 2750 rows, 55.1 min left
+[18:08:20] [eval] budget 3072: 160/200 positions, 2800 rows, 53.4 min left
+[18:42:42] [eval] budget 3072: 170/200 positions, 2850 rows, 51.0 min left
+[18:44:32] [eval] budget 3072: 180/200 positions, 2900 rows, 49.2 min left
+[18:46:09] [eval] budget 3072: 190/200 positions, 2950 rows, 47.5 min left
+[18:47:51] [eval] budget 3072: 200/200 positions, 3000 rows, 45.8 min left
+[18:47:51] [eval] budget 3072 complete
+[18:47:51] === stage report ===
+[18:47:53] [analysis] verdict: inconclusive - Observed difference +3.5 pp with 95% CI -1.5 to +8.8 pp; the interval contains zero.
+[18:47:55] [report] wrote 8 figures to /Users/jaycewalzer/Desktop/ChessConceptDiscovery-work/ChessConceptDiscovery/outputs/laptop-main/figures
+[18:47:55] [report] built 10 case studies
+[18:47:55] [report] wrote /Users/jaycewalzer/Desktop/ChessConceptDiscovery-work/ChessConceptDiscovery/outputs/laptop-main/report.html
+[18:47:55] [report] wrote /Users/jaycewalzer/Desktop/ChessConceptDiscovery-work/ChessConceptDiscovery/outputs/laptop-main/case_studies.html
+[18:47:55] [report] wrote /Users/jaycewalzer/Desktop/ChessConceptDiscovery-work/ChessConceptDiscovery/outputs/laptop-main/report.md
+[18:47:55] === done in 74.2 min ===
+[18:47:55] report: /Users/jaycewalzer/Desktop/ChessConceptDiscovery-work/ChessConceptDiscovery/outputs/laptop-main/report.html

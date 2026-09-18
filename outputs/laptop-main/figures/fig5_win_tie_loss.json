@@ -1,0 +1,23 @@
+{
+  "Standard PUCT": {
+    "a_only": 17,
+    "both_solved": 48,
+    "both_failed": 125,
+    "b_only": 10,
+    "n_paired": 200
+  },
+  "Quality-only": {
+    "a_only": 15,
+    "both_solved": 50,
+    "both_failed": 127,
+    "b_only": 8,
+    "n_paired": 200
+  },
+  "Random": {
+    "a_only": 24,
+    "both_solved": 41,
+    "both_failed": 109,
+    "b_only": 26,
+    "n_paired": 200
+  }
+}

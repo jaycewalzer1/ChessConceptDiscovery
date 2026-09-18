@@ -1,0 +1,2440 @@
+{
+  "run_id": "laptop-main",
+  "selection_rule": "Fixed order feature_win -> standard_win -> both_solved -> both_failed -> vs_random; up to 2 per category, 10 total, task-id order within a category.",
+  "category_counts": {
+    "feature_win": 17,
+    "standard_win": 10,
+    "both_solved": 48,
+    "both_failed": 125,
+    "vs_random": 24
+  },
+  "empty_categories": [],
+  "cases": [
+    {
+      "case_id": "case01",
+      "category": "feature_win",
+      "category_title": "Feature-diverse allocation solved it, standard PUCT did not",
+      "task_id": "eg00006-e0",
+      "family": "eg00006",
+      "source": "endgame",
+      "fen": "8/8/R7/8/8/2Q5/5k2/K7 w - - 2 2",
+      "side_to_move": "White",
+      "orientation": "White",
+      "mate_in": 2,
+      "horizon_plies": 3,
+      "num_legal_moves": 40,
+      "solution_moves": [
+        "a6a2"
+      ],
+      "solution_sans": [
+        "Ra2+"
+      ],
+      "solver_status": "ok",
+      "methods": {
+        "standard": {
+          "move_uci": "a1b1",
+          "move_san": "Kb1",
+          "correct": false,
+          "policy_rank": 8,
+          "policy_prob": 0.02902271021740505,
+          "simulations": 1024,
+          "nn_evals": 837,
+          "elapsed_s": 1.2733525000003283,
+          "candidates": [],
+          "search_pv_san": [
+            "Kb1",
+            "Ke2",
+            "Qc2+",
+            "Ke3",
+            "Qg6",
+            "Ke2"
+          ],
+          "feature_mode": "n/a"
+        },
+        "quality": {
+          "move_uci": "a6a2",
+          "move_san": "Ra2+",
+          "correct": true,
+          "policy_rank": 5,
+          "policy_prob": 0.05359442942315305,
+          "simulations": 1024,
+          "nn_evals": 704,
+          "elapsed_s": 1.0482463340013055,
+          "candidates": [
+            {
+              "action": 12840,
+              "move_uci": "a6a2",
+              "san": "Ra2+",
+              "screen_visits": 176,
+              "alloc_sims": 192,
+              "post_visits": 368,
+              "q_root": 0.5687567690335488
+            },
+            {
+              "action": 13035,
+              "move_uci": "a6h6",
+              "san": "Rh6",
+              "screen_visits": 26,
+              "alloc_sims": 192,
+              "post_visits": 218,
+              "q_root": 0.13978388004855108
+            },
+            {
+              "action": 13025,
+              "move_uci": "a6f6",
+              "san": "Rf6+",
+              "screen_visits": 25,
+              "alloc_sims": 192,
+              "post_visits": 217,
+              "q_root": 0.14962095001600853
+            },
+            {
+              "action": 5780,
+              "move_uci": "c3e1",
+              "san": "Qe1+",
+              "screen_visits": 18,
+              "alloc_sims": 192,
+              "post_visits": 210,
+              "q_root": 0.04661877159489363
+            }
+          ],
+          "search_pv_san": [
+            "Ra2+",
+            "Kf1",
+            "Kb1",
+            "Kg1",
+            "Qe1#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "random": {
+          "move_uci": "a6a2",
+          "move_san": "Ra2+",
+          "correct": true,
+          "policy_rank": 5,
+          "policy_prob": 0.05359442942315305,
+          "simulations": 1024,
+          "nn_evals": 732,
+          "elapsed_s": 1.1173170000038226,
+          "candidates": [
+            {
+              "action": 12840,
+              "move_uci": "a6a2",
+              "san": "Ra2+",
+              "screen_visits": 176,
+              "alloc_sims": 192,
+              "post_visits": 368,
+              "q_root": 0.5687567690335488
+            },
+            {
+              "action": 6050,
+              "move_uci": "c3c8",
+              "san": "Qc8",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.19607101095637663
+            },
+            {
+              "action": 5855,
+              "move_uci": "c3d3",
+              "san": "Qd3",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.24801798036365427
+            },
+            {
+              "action": 12920,
+              "move_uci": "a6a4",
+              "san": "Ra4",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.25405570565737357
+            }
+          ],
+          "search_pv_san": [
+            "Ra2+",
+            "Kf1",
+            "Kb1",
+            "Kg1",
+            "Qe1#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "feature": {
+          "move_uci": "a6a2",
+          "move_san": "Ra2+",
+          "correct": true,
+          "policy_rank": 5,
+          "policy_prob": 0.05359442942315305,
+          "simulations": 1024,
+          "nn_evals": 704,
+          "elapsed_s": 1.0464318759986782,
+          "candidates": [
+            {
+              "action": 12840,
+              "move_uci": "a6a2",
+              "san": "Ra2+",
+              "screen_visits": 176,
+              "alloc_sims": 192,
+              "post_visits": 368,
+              "q_root": 0.5687567690335488
+            },
+            {
+              "action": 5780,
+              "move_uci": "c3e1",
+              "san": "Qe1+",
+              "screen_visits": 18,
+              "alloc_sims": 192,
+              "post_visits": 210,
+              "q_root": 0.04661877159489363
+            },
+            {
+              "action": 13035,
+              "move_uci": "a6h6",
+              "san": "Rh6",
+              "screen_visits": 26,
+              "alloc_sims": 192,
+              "post_visits": 218,
+              "q_root": 0.13978388004855108
+            },
+            {
+              "action": 13025,
+              "move_uci": "a6f6",
+              "san": "Rf6+",
+              "screen_visits": 25,
+              "alloc_sims": 192,
+              "post_visits": 217,
+              "q_root": 0.14962095001600853
+            }
+          ],
+          "search_pv_san": [
+            "Ra2+",
+            "Kf1",
+            "Kb1",
+            "Kg1",
+            "Qe1#"
+          ],
+          "feature_mode": "continuation"
+        }
+      },
+      "oracle_line_san": [
+        "Ra2+",
+        "Kg1",
+        "Qe1#"
+      ],
+      "refutations": {
+        "standard": [
+          "Kb1",
+          "Kg2"
+        ]
+      },
+      "explanation": "The exact verifier proved 1 root move force mate in 2 (a6a2), checking every legal defensive reply. Feature-diverse allocation explored 4 candidates: Ra2+ (screen visits 176, 192 extra sims), Qe1+ (screen visits 18, 192 extra sims), Rh6 (screen visits 26, 192 extra sims), Rf6+ (screen visits 25, 192 extra sims). It selected a6a2, which the raw network policy ranked #5 with probability 0.054. The verifier says this move DOES force mate within 2. Standard PUCT selected a1b1 (raw policy rank #8, p=0.029); verifier: not a forced mate within horizon. Refutation of the standard choice: after Kb1 Black replies Kg2, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game.",
+      "result_ids": {
+        "standard": "eg00006-e0|standard|1024|0",
+        "quality": "eg00006-e0|quality|1024|0",
+        "random": "eg00006-e0|random|1024|0",
+        "feature": "eg00006-e0|feature|1024|0"
+      },
+      "best_solution_policy_rank": 5,
+      "best_solution_policy_prob": 0.05359442942315305
+    },
+    {
+      "case_id": "case02",
+      "category": "feature_win",
+      "category_title": "Feature-diverse allocation solved it, standard PUCT did not",
+      "task_id": "eg00021-e0",
+      "family": "eg00021",
+      "source": "endgame",
+      "fen": "2R5/8/2Q5/8/5K2/k7/8/8 w - - 2 2",
+      "side_to_move": "White",
+      "orientation": "White",
+      "mate_in": 2,
+      "horizon_plies": 3,
+      "num_legal_moves": 40,
+      "solution_moves": [
+        "c6b5",
+        "c6b6",
+        "c6b7",
+        "c8b8"
+      ],
+      "solution_sans": [
+        "Qb5",
+        "Qb6",
+        "Qb7",
+        "Rb8"
+      ],
+      "solver_status": "ok",
+      "methods": {
+        "standard": {
+          "move_uci": "f4f3",
+          "move_san": "Kf3",
+          "correct": false,
+          "policy_rank": 1,
+          "policy_prob": 0.24327088059373497,
+          "simulations": 1024,
+          "nn_evals": 661,
+          "elapsed_s": 1.0604260839972994,
+          "candidates": [],
+          "search_pv_san": [
+            "Kf3",
+            "Kb2",
+            "Qd7",
+            "Kb3",
+            "Qe8",
+            "Kb4"
+          ],
+          "feature_mode": "n/a"
+        },
+        "quality": {
+          "move_uci": "c8b8",
+          "move_san": "Rb8",
+          "correct": true,
+          "policy_rank": 4,
+          "policy_prob": 0.07744637610746563,
+          "simulations": 1024,
+          "nn_evals": 740,
+          "elapsed_s": 1.2052658329994301,
+          "candidates": [
+            {
+              "action": 9385,
+              "move_uci": "f4f3",
+              "san": "Kf3",
+              "screen_visits": 154,
+              "alloc_sims": 192,
+              "post_visits": 346,
+              "q_root": 0.6729755788621616
+            },
+            {
+              "action": 18845,
+              "move_uci": "c8b8",
+              "san": "Rb8",
+              "screen_visits": 69,
+              "alloc_sims": 192,
+              "post_visits": 261,
+              "q_root": 0.6852664821228134
+            },
+            {
+              "action": 18810,
+              "move_uci": "c8c7",
+              "san": "Rc7",
+              "screen_visits": 20,
+              "alloc_sims": 192,
+              "post_visits": 212,
+              "q_root": 0.5275163004297834
+            },
+            {
+              "action": 13615,
+              "move_uci": "c6d5",
+              "san": "Qd5",
+              "screen_visits": 13,
+              "alloc_sims": 192,
+              "post_visits": 205,
+              "q_root": 0.5266274258312655
+            }
+          ],
+          "search_pv_san": [
+            "Kf3",
+            "Kb2",
+            "Qd7",
+            "Kb3",
+            "Qe8",
+            "Kb4"
+          ],
+          "feature_mode": "n/a"
+        },
+        "random": {
+          "move_uci": "f4f3",
+          "move_san": "Kf3",
+          "correct": false,
+          "policy_rank": 1,
+          "policy_prob": 0.24327088059373497,
+          "simulations": 1024,
+          "nn_evals": 724,
+          "elapsed_s": 1.1449430830034544,
+          "candidates": [
+            {
+              "action": 9385,
+              "move_uci": "f4f3",
+              "san": "Kf3",
+              "screen_visits": 154,
+              "alloc_sims": 192,
+              "post_visits": 346,
+              "q_root": 0.6729755788621616
+            },
+            {
+              "action": 13720,
+              "move_uci": "c6a8",
+              "san": "Qa8+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.5634103870801048
+            },
+            {
+              "action": 13475,
+              "move_uci": "c6h1",
+              "san": "Qh1",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.5962717181042686
+            },
+            {
+              "action": 13610,
+              "move_uci": "c6c5",
+              "san": "Qc5+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.5637619873711482
+            }
+          ],
+          "search_pv_san": [
+            "Kf3",
+            "Kb2",
+            "Qd7",
+            "Kb3",
+            "Qe8",
+            "Kb4"
+          ],
+          "feature_mode": "n/a"
+        },
+        "feature": {
+          "move_uci": "c8b8",
+          "move_san": "Rb8",
+          "correct": true,
+          "policy_rank": 4,
+          "policy_prob": 0.07744637610746563,
+          "simulations": 1024,
+          "nn_evals": 716,
+          "elapsed_s": 1.0996559589984827,
+          "candidates": [
+            {
+              "action": 9385,
+              "move_uci": "f4f3",
+              "san": "Kf3",
+              "screen_visits": 154,
+              "alloc_sims": 192,
+              "post_visits": 346,
+              "q_root": 0.6729755788621616
+            },
+            {
+              "action": 18845,
+              "move_uci": "c8b8",
+              "san": "Rb8",
+              "screen_visits": 69,
+              "alloc_sims": 192,
+              "post_visits": 261,
+              "q_root": 0.6852664821228134
+            },
+            {
+              "action": 18810,
+              "move_uci": "c8c7",
+              "san": "Rc7",
+              "screen_visits": 20,
+              "alloc_sims": 192,
+              "post_visits": 212,
+              "q_root": 0.5275163004297834
+            },
+            {
+              "action": 13675,
+              "move_uci": "c6h6",
+              "san": "Qh6",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.559719918266788
+            }
+          ],
+          "search_pv_san": [
+            "Kf3",
+            "Kb2",
+            "Qd7",
+            "Kb3",
+            "Qe8",
+            "Kb4"
+          ],
+          "feature_mode": "continuation"
+        }
+      },
+      "oracle_line_san": [
+        "Qb5",
+        "Ka2",
+        "Ra8#"
+      ],
+      "refutations": {
+        "standard": [
+          "Kf3",
+          "Kb4"
+        ],
+        "random": [
+          "Kf3",
+          "Kb4"
+        ]
+      },
+      "explanation": "The exact verifier proved 4 root moves force mate in 2 (c6b5, c6b6, c6b7, c8b8), checking every legal defensive reply. Feature-diverse allocation explored 4 candidates: Kf3 (screen visits 154, 192 extra sims), Rb8 (screen visits 69, 192 extra sims), Rc7 (screen visits 20, 192 extra sims), Qh6 (screen visits 0, 192 extra sims). It selected c8b8, which the raw network policy ranked #4 with probability 0.077. The verifier says this move DOES force mate within 2. Standard PUCT selected f4f3 (raw policy rank #1, p=0.243); verifier: not a forced mate within horizon. Refutation of the standard choice: after Kf3 Black replies Kb4, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the random choice: after Kf3 Black replies Kb4, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game.",
+      "result_ids": {
+        "standard": "eg00021-e0|standard|1024|0",
+        "quality": "eg00021-e0|quality|1024|0",
+        "random": "eg00021-e0|random|1024|0",
+        "feature": "eg00021-e0|feature|1024|0"
+      },
+      "best_solution_policy_rank": 4,
+      "best_solution_policy_prob": 0.07744637610746563
+    },
+    {
+      "case_id": "case03",
+      "category": "standard_win",
+      "category_title": "Standard PUCT solved it, feature-diverse allocation did not",
+      "task_id": "eg00007-e0",
+      "family": "eg00007",
+      "source": "endgame",
+      "fen": "8/8/6K1/2R5/8/8/7R/1k6 w - - 2 2",
+      "side_to_move": "White",
+      "orientation": "White",
+      "mate_in": 2,
+      "horizon_plies": 3,
+      "num_legal_moves": 36,
+      "solution_moves": [
+        "c5a5",
+        "c5c2",
+        "c5c3",
+        "c5c4",
+        "c5c6",
+        "c5c7",
+        "c5c8",
+        "c5e5",
+        "c5f5",
+        "c5g5",
+        "g6f5",
+        "g6f6",
+        "g6f7",
+        "g6g5",
+        "g6g7",
+        "g6h5",
+        "g6h6",
+        "g6h7",
+        "h2d2",
+        "h2e2",
+        "h2f2",
+        "h2g2"
+      ],
+      "solution_sans": [
+        "Ra5",
+        "Rcc2",
+        "Rc3",
+        "Rc4",
+        "Rc6",
+        "Rc7",
+        "Rc8",
+        "Re5",
+        "Rf5",
+        "Rg5",
+        "Kf5",
+        "Kf6",
+        "Kf7",
+        "Kg5",
+        "Kg7",
+        "Kh5",
+        "Kh6",
+        "Kh7",
+        "Rd2",
+        "Re2",
+        "Rf2",
+        "Rg2"
+      ],
+      "solver_status": "ok",
+      "methods": {
+        "standard": {
+          "move_uci": "h2d2",
+          "move_san": "Rd2",
+          "correct": true,
+          "policy_rank": 6,
+          "policy_prob": 0.047519907313915706,
+          "simulations": 1024,
+          "nn_evals": 295,
+          "elapsed_s": 0.482257584000763,
+          "candidates": [],
+          "search_pv_san": [
+            "Rd2",
+            "Ka1",
+            "Rc1#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "quality": {
+          "move_uci": "c5h5",
+          "move_san": "Rch5",
+          "correct": false,
+          "policy_rank": 2,
+          "policy_prob": 0.2471229586469562,
+          "simulations": 1024,
+          "nn_evals": 801,
+          "elapsed_s": 1.227780792003614,
+          "candidates": [
+            {
+              "action": 11075,
+              "move_uci": "c5h5",
+              "san": "Rch5",
+              "screen_visits": 154,
+              "alloc_sims": 192,
+              "post_visits": 346,
+              "q_root": 0.5846819491098726
+            },
+            {
+              "action": 4850,
+              "move_uci": "h2c2",
+              "san": "Rhc2",
+              "screen_visits": 38,
+              "alloc_sims": 192,
+              "post_visits": 230,
+              "q_root": 0.3866736645111814
+            },
+            {
+              "action": 10970,
+              "move_uci": "c5c3",
+              "san": "Rc3",
+              "screen_visits": 35,
+              "alloc_sims": 192,
+              "post_visits": 227,
+              "q_root": 0.4286779656284181
+            },
+            {
+              "action": 5075,
+              "move_uci": "h2h7",
+              "san": "Rh7",
+              "screen_visits": 15,
+              "alloc_sims": 192,
+              "post_visits": 207,
+              "q_root": 0.4155844800075255
+            }
+          ],
+          "search_pv_san": [
+            "Rch5",
+            "Kc1",
+            "Rh7",
+            "Kd1",
+            "Kf5",
+            "Kc1"
+          ],
+          "feature_mode": "n/a"
+        },
+        "random": {
+          "move_uci": "g6g5",
+          "move_san": "Kg5",
+          "correct": true,
+          "policy_rank": 30,
+          "policy_prob": 0.0015244883845421946,
+          "simulations": 1024,
+          "nn_evals": 633,
+          "elapsed_s": 0.9643054999978631,
+          "candidates": [
+            {
+              "action": 11075,
+              "move_uci": "c5h5",
+              "san": "Rch5",
+              "screen_visits": 154,
+              "alloc_sims": 192,
+              "post_visits": 346,
+              "q_root": 0.5846819491098726
+            },
+            {
+              "action": 14905,
+              "move_uci": "g6f5",
+              "san": "Kf5",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.801344473648411
+            },
+            {
+              "action": 4840,
+              "move_uci": "h2a2",
+              "san": "Ra2",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.2996921936469876
+            },
+            {
+              "action": 14910,
+              "move_uci": "g6g5",
+              "san": "Kg5",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.9586709394394733
+            }
+          ],
+          "search_pv_san": [
+            "Rch5",
+            "Kc1",
+            "Rh7",
+            "Kd1",
+            "Kf5",
+            "Kc1"
+          ],
+          "feature_mode": "n/a"
+        },
+        "feature": {
+          "move_uci": "c5h5",
+          "move_san": "Rch5",
+          "correct": false,
+          "policy_rank": 2,
+          "policy_prob": 0.2471229586469562,
+          "simulations": 1024,
+          "nn_evals": 838,
+          "elapsed_s": 1.2506954170021345,
+          "candidates": [
+            {
+              "action": 11075,
+              "move_uci": "c5h5",
+              "san": "Rch5",
+              "screen_visits": 154,
+              "alloc_sims": 192,
+              "post_visits": 346,
+              "q_root": 0.5846819491098726
+            },
+            {
+              "action": 10890,
+              "move_uci": "c5c1",
+              "san": "Rc1+",
+              "screen_visits": 14,
+              "alloc_sims": 192,
+              "post_visits": 206,
+              "q_root": 0.2407801771249387
+            },
+            {
+              "action": 4850,
+              "move_uci": "h2c2",
+              "san": "Rhc2",
+              "screen_visits": 38,
+              "alloc_sims": 192,
+              "post_visits": 230,
+              "q_root": 0.3866736645111814
+            },
+            {
+              "action": 10970,
+              "move_uci": "c5c3",
+              "san": "Rc3",
+              "screen_visits": 35,
+              "alloc_sims": 192,
+              "post_visits": 227,
+              "q_root": 0.4286779656284181
+            }
+          ],
+          "search_pv_san": [
+            "Rch5",
+            "Kc1",
+            "Rh7",
+            "Kd1",
+            "Kf5",
+            "Kc1"
+          ],
+          "feature_mode": "continuation"
+        }
+      },
+      "oracle_line_san": [
+        "Ra5",
+        "Kc1",
+        "Ra1#"
+      ],
+      "refutations": {
+        "feature": [
+          "Rch5",
+          "Kc1"
+        ],
+        "quality": [
+          "Rch5",
+          "Kc1"
+        ]
+      },
+      "explanation": "The exact verifier proved 22 root moves force mate in 2 (c5a5, c5c2, c5c3, c5c4, c5c6, c5c7, c5c8, c5e5, c5f5, c5g5, g6f5, g6f6, g6f7, g6g5, g6g7, g6h5, g6h6, g6h7, h2d2, h2e2, h2f2, h2g2), checking every legal defensive reply. Feature-diverse allocation explored 4 candidates: Rch5 (screen visits 154, 192 extra sims), Rc1+ (screen visits 14, 192 extra sims), Rhc2 (screen visits 38, 192 extra sims), Rc3 (screen visits 35, 192 extra sims). It selected c5h5, which the raw network policy ranked #2 with probability 0.247. The verifier says this move does NOT force mate within 2. Standard PUCT selected h2d2 (raw policy rank #6, p=0.048); verifier: solved. Refutation of the feature choice: after Rch5 Black replies Kc1, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the quality choice: after Rch5 Black replies Kc1, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game.",
+      "result_ids": {
+        "standard": "eg00007-e0|standard|1024|0",
+        "quality": "eg00007-e0|quality|1024|0",
+        "random": "eg00007-e0|random|1024|0",
+        "feature": "eg00007-e0|feature|1024|0"
+      },
+      "best_solution_policy_rank": 1,
+      "best_solution_policy_prob": 0.25047997141723877
+    },
+    {
+      "case_id": "case04",
+      "category": "standard_win",
+      "category_title": "Standard PUCT solved it, feature-diverse allocation did not",
+      "task_id": "eg00028-e0",
+      "family": "eg00028",
+      "source": "endgame",
+      "fen": "8/8/8/8/1R6/3R4/5K2/7k w - - 2 2",
+      "side_to_move": "White",
+      "orientation": "White",
+      "mate_in": 1,
+      "horizon_plies": 1,
+      "num_legal_moves": 34,
+      "solution_moves": [
+        "b4h4",
+        "d3h3"
+      ],
+      "solution_sans": [
+        "Rh4#",
+        "Rh3#"
+      ],
+      "solver_status": "ok",
+      "methods": {
+        "standard": {
+          "move_uci": "b4h4",
+          "move_san": "Rh4#",
+          "correct": true,
+          "policy_rank": 3,
+          "policy_prob": 0.0691116731131004,
+          "simulations": 1024,
+          "nn_evals": 49,
+          "elapsed_s": 0.10431637500005309,
+          "candidates": [],
+          "search_pv_san": [
+            "Rh4#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "quality": {
+          "move_uci": "b4h4",
+          "move_san": "Rh4#",
+          "correct": true,
+          "policy_rank": 3,
+          "policy_prob": 0.0691116731131004,
+          "simulations": 1024,
+          "nn_evals": 211,
+          "elapsed_s": 0.3715205420012353,
+          "candidates": [
+            {
+              "action": 8285,
+              "move_uci": "b4b8",
+              "san": "Rb8",
+              "screen_visits": 251,
+              "alloc_sims": 192,
+              "post_visits": 443,
+              "q_root": 0.9061178541269246
+            },
+            {
+              "action": 8165,
+              "move_uci": "b4b5",
+              "san": "Rb5",
+              "screen_visits": 5,
+              "alloc_sims": 192,
+              "post_visits": 197,
+              "q_root": 0.9058291497569398
+            },
+            {
+              "action": 8155,
+              "move_uci": "b4h4",
+              "san": "Rh4#",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 1.0
+            },
+            {
+              "action": 6215,
+              "move_uci": "d3d4",
+              "san": "Rdd4",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.2993855006447535
+            }
+          ],
+          "search_pv_san": [
+            "Rb8",
+            "Kh2",
+            "Rh8#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "random": {
+          "move_uci": "b4b7",
+          "move_san": "Rb7",
+          "correct": false,
+          "policy_rank": 22,
+          "policy_prob": 0.004851173745828728,
+          "simulations": 1024,
+          "nn_evals": 333,
+          "elapsed_s": 0.5236695420026081,
+          "candidates": [
+            {
+              "action": 8285,
+              "move_uci": "b4b8",
+              "san": "Rb8",
+              "screen_visits": 251,
+              "alloc_sims": 192,
+              "post_visits": 443,
+              "q_root": 0.9061178541269246
+            },
+            {
+              "action": 8245,
+              "move_uci": "b4b7",
+              "san": "Rb7",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.968916237701715
+            },
+            {
+              "action": 6135,
+              "move_uci": "d3d2",
+              "san": "Rd2",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.27543990140590197
+            },
+            {
+              "action": 6170,
+              "move_uci": "d3c3",
+              "san": "Rc3",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.6497216104225791
+            }
+          ],
+          "search_pv_san": [
+            "Rb8",
+            "Kh2",
+            "Rh8#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "feature": {
+          "move_uci": "b4d4",
+          "move_san": "Rbd4",
+          "correct": false,
+          "policy_rank": 19,
+          "policy_prob": 0.0061278682441040285,
+          "simulations": 1024,
+          "nn_evals": 217,
+          "elapsed_s": 0.3718147500039777,
+          "candidates": [
+            {
+              "action": 8285,
+              "move_uci": "b4b8",
+              "san": "Rb8",
+              "screen_visits": 251,
+              "alloc_sims": 192,
+              "post_visits": 443,
+              "q_root": 0.9061178541269246
+            },
+            {
+              "action": 4260,
+              "move_uci": "f2e3",
+              "san": "Ke3",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.3606116385175002
+            },
+            {
+              "action": 8005,
+              "move_uci": "b4b1",
+              "san": "Rb1+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.622210416209358
+            },
+            {
+              "action": 8135,
+              "move_uci": "b4d4",
+              "san": "Rbd4",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.947718460788381
+            }
+          ],
+          "search_pv_san": [
+            "Rb8",
+            "Kh2",
+            "Rh8#"
+          ],
+          "feature_mode": "continuation"
+        }
+      },
+      "oracle_line_san": [
+        "Rh4#"
+      ],
+      "refutations": {
+        "feature": [
+          "Rbd4",
+          "Kh2"
+        ],
+        "random": [
+          "Rb7",
+          "Kh2"
+        ]
+      },
+      "explanation": "The exact verifier proved 2 root moves force mate in 1 (b4h4, d3h3), checking every legal defensive reply. Feature-diverse allocation explored 4 candidates: Rb8 (screen visits 251, 192 extra sims), Ke3 (screen visits 0, 192 extra sims), Rb1+ (screen visits 0, 192 extra sims), Rbd4 (screen visits 0, 192 extra sims). It selected b4d4, which the raw network policy ranked #19 with probability 0.006. The verifier says this move does NOT force mate within 1. Standard PUCT selected b4h4 (raw policy rank #3, p=0.069); verifier: solved. Refutation of the feature choice: after Rbd4 Black replies Kh2, which survives the 1-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the random choice: after Rb7 Black replies Kh2, which survives the 1-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game.",
+      "result_ids": {
+        "standard": "eg00028-e0|standard|1024|0",
+        "quality": "eg00028-e0|quality|1024|0",
+        "random": "eg00028-e0|random|1024|0",
+        "feature": "eg00028-e0|feature|1024|0"
+      },
+      "best_solution_policy_rank": 3,
+      "best_solution_policy_prob": 0.0691116731131004
+    },
+    {
+      "case_id": "case05",
+      "category": "both_solved",
+      "category_title": "Both methods solved it",
+      "task_id": "eg00000-e0",
+      "family": "eg00000",
+      "source": "endgame",
+      "fen": "1K6/1Q6/8/2R5/8/k7/8/8 w - - 2 2",
+      "side_to_move": "White",
+      "orientation": "White",
+      "mate_in": 1,
+      "horizon_plies": 1,
+      "num_legal_moves": 40,
+      "solution_moves": [
+        "c5a5"
+      ],
+      "solution_sans": [
+        "Ra5#"
+      ],
+      "solver_status": "ok",
+      "methods": {
+        "standard": {
+          "move_uci": "c5a5",
+          "move_san": "Ra5#",
+          "correct": true,
+          "policy_rank": 2,
+          "policy_prob": 0.1641265423106025,
+          "simulations": 1024,
+          "nn_evals": 51,
+          "elapsed_s": 0.11993816700123716,
+          "candidates": [],
+          "search_pv_san": [
+            "Ra5#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "quality": {
+          "move_uci": "c5a5",
+          "move_san": "Ra5#",
+          "correct": true,
+          "policy_rank": 2,
+          "policy_prob": 0.1641265423106025,
+          "simulations": 1024,
+          "nn_evals": 228,
+          "elapsed_s": 0.40218729100161,
+          "candidates": [
+            {
+              "action": 18490,
+              "move_uci": "b8c7",
+              "san": "Kc7",
+              "screen_visits": 129,
+              "alloc_sims": 192,
+              "post_visits": 321,
+              "q_root": 0.9306905282997872
+            },
+            {
+              "action": 11040,
+              "move_uci": "c5a5",
+              "san": "Ra5#",
+              "screen_visits": 127,
+              "alloc_sims": 192,
+              "post_visits": 319,
+              "q_root": 1.0
+            },
+            {
+              "action": 18530,
+              "move_uci": "b8c8",
+              "san": "Kc8",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.8861908904165802
+            },
+            {
+              "action": 11045,
+              "move_uci": "c5b5",
+              "san": "Rb5",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.5220948890469235
+            }
+          ],
+          "search_pv_san": [
+            "Kc7",
+            "Ka4",
+            "Qb1",
+            "Ka3",
+            "Ra5#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "random": {
+          "move_uci": "b8c7",
+          "move_san": "Kc7",
+          "correct": false,
+          "policy_rank": 1,
+          "policy_prob": 0.39715960187976423,
+          "simulations": 1024,
+          "nn_evals": 481,
+          "elapsed_s": 0.7450788329952047,
+          "candidates": [
+            {
+              "action": 18490,
+              "move_uci": "b8c7",
+              "san": "Kc7",
+              "screen_visits": 129,
+              "alloc_sims": 192,
+              "post_visits": 321,
+              "q_root": 0.9306905282997872
+            },
+            {
+              "action": 11060,
+              "move_uci": "c5e5",
+              "san": "Re5",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.6882834429876792
+            },
+            {
+              "action": 15855,
+              "move_uci": "b7d5",
+              "san": "Qd5",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.25885366768651
+            },
+            {
+              "action": 15785,
+              "move_uci": "b7f3",
+              "san": "Qf3+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.16180559567421907
+            }
+          ],
+          "search_pv_san": [
+            "Kc7",
+            "Ka4",
+            "Qb1",
+            "Ka3",
+            "Ra5#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "feature": {
+          "move_uci": "c5a5",
+          "move_san": "Ra5#",
+          "correct": true,
+          "policy_rank": 2,
+          "policy_prob": 0.1641265423106025,
+          "simulations": 1024,
+          "nn_evals": 346,
+          "elapsed_s": 0.5456967079880997,
+          "candidates": [
+            {
+              "action": 18490,
+              "move_uci": "b8c7",
+              "san": "Kc7",
+              "screen_visits": 129,
+              "alloc_sims": 192,
+              "post_visits": 321,
+              "q_root": 0.9306905282997872
+            },
+            {
+              "action": 11040,
+              "move_uci": "c5a5",
+              "san": "Ra5#",
+              "screen_visits": 127,
+              "alloc_sims": 192,
+              "post_visits": 319,
+              "q_root": 1.0
+            },
+            {
+              "action": 15955,
+              "move_uci": "b7h7",
+              "san": "Qh7",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.08476299325901764
+            },
+            {
+              "action": 15845,
+              "move_uci": "b7b5",
+              "san": "Qb5",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.590075967529393
+            }
+          ],
+          "search_pv_san": [
+            "Kc7",
+            "Ka4",
+            "Qb1",
+            "Ka3",
+            "Ra5#"
+          ],
+          "feature_mode": "continuation"
+        }
+      },
+      "oracle_line_san": [
+        "Ra5#"
+      ],
+      "refutations": {
+        "random": [
+          "Kc7",
+          "Ka4"
+        ]
+      },
+      "explanation": "The exact verifier proved 1 root move force mate in 1 (c5a5), checking every legal defensive reply. Feature-diverse allocation explored 4 candidates: Kc7 (screen visits 129, 192 extra sims), Ra5# (screen visits 127, 192 extra sims), Qh7 (screen visits 0, 192 extra sims), Qb5 (screen visits 0, 192 extra sims). It selected c5a5, which the raw network policy ranked #2 with probability 0.164. The verifier says this move DOES force mate within 1. Standard PUCT selected c5a5 (raw policy rank #2, p=0.164); verifier: solved. Refutation of the random choice: after Kc7 Black replies Ka4, which survives the 1-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game.",
+      "result_ids": {
+        "standard": "eg00000-e0|standard|1024|0",
+        "quality": "eg00000-e0|quality|1024|0",
+        "random": "eg00000-e0|random|1024|0",
+        "feature": "eg00000-e0|feature|1024|0"
+      },
+      "best_solution_policy_rank": 2,
+      "best_solution_policy_prob": 0.1641265423106025
+    },
+    {
+      "case_id": "case06",
+      "category": "both_solved",
+      "category_title": "Both methods solved it",
+      "task_id": "eg00005-e0",
+      "family": "eg00005",
+      "source": "endgame",
+      "fen": "8/4k3/R7/1R6/8/8/7K/8 w - - 2 2",
+      "side_to_move": "White",
+      "orientation": "White",
+      "mate_in": 2,
+      "horizon_plies": 3,
+      "num_legal_moves": 33,
+      "solution_moves": [
+        "b5b7"
+      ],
+      "solution_sans": [
+        "Rb7+"
+      ],
+      "solver_status": "ok",
+      "methods": {
+        "standard": {
+          "move_uci": "b5b7",
+          "move_san": "Rb7+",
+          "correct": true,
+          "policy_rank": 7,
+          "policy_prob": 0.04099403320453291,
+          "simulations": 1024,
+          "nn_evals": 600,
+          "elapsed_s": 0.9604575000048499,
+          "candidates": [],
+          "search_pv_san": [
+            "Rb7+",
+            "Ke8",
+            "Rf6",
+            "Kd8",
+            "Rf4",
+            "Kc8"
+          ],
+          "feature_mode": "n/a"
+        },
+        "quality": {
+          "move_uci": "h2g1",
+          "move_san": "Kg1",
+          "correct": false,
+          "policy_rank": 3,
+          "policy_prob": 0.07601324770449013,
+          "simulations": 1024,
+          "nn_evals": 653,
+          "elapsed_s": 0.9744557920057559,
+          "candidates": [
+            {
+              "action": 4830,
+              "move_uci": "h2g1",
+              "san": "Kg1",
+              "screen_visits": 159,
+              "alloc_sims": 192,
+              "post_visits": 351,
+              "q_root": 0.5129216367676005
+            },
+            {
+              "action": 13025,
+              "move_uci": "a6f6",
+              "san": "Rf6",
+              "screen_visits": 51,
+              "alloc_sims": 192,
+              "post_visits": 243,
+              "q_root": 0.41211492598915295
+            },
+            {
+              "action": 10750,
+              "move_uci": "b5g5",
+              "san": "Rg5",
+              "screen_visits": 44,
+              "alloc_sims": 192,
+              "post_visits": 236,
+              "q_root": 0.40724653660880117
+            },
+            {
+              "action": 13035,
+              "move_uci": "a6h6",
+              "san": "Rh6",
+              "screen_visits": 2,
+              "alloc_sims": 192,
+              "post_visits": 194,
+              "q_root": 0.44038252053859156
+            }
+          ],
+          "search_pv_san": [
+            "Kg1",
+            "Kf7",
+            "Rg5",
+            "Kf8",
+            "Rg3",
+            "Kf7"
+          ],
+          "feature_mode": "n/a"
+        },
+        "random": {
+          "move_uci": "a6e6",
+          "move_san": "Re6+",
+          "correct": false,
+          "policy_rank": 27,
+          "policy_prob": 0.0014104438326532662,
+          "simulations": 1024,
+          "nn_evals": 752,
+          "elapsed_s": 1.0968869170028483,
+          "candidates": [
+            {
+              "action": 4830,
+              "move_uci": "h2g1",
+              "san": "Kg1",
+              "screen_visits": 159,
+              "alloc_sims": 192,
+              "post_visits": 351,
+              "q_root": 0.5129216367676005
+            },
+            {
+              "action": 10740,
+              "move_uci": "b5e5",
+              "san": "Re5+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.3635930716943169
+            },
+            {
+              "action": 10735,
+              "move_uci": "b5d5",
+              "san": "Rd5",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.370000201992816
+            },
+            {
+              "action": 13020,
+              "move_uci": "a6e6",
+              "san": "Re6+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.5512214026804724
+            }
+          ],
+          "search_pv_san": [
+            "Kg1",
+            "Kf7",
+            "Rg5",
+            "Kf8",
+            "Rg3",
+            "Kf7"
+          ],
+          "feature_mode": "n/a"
+        },
+        "feature": {
+          "move_uci": "b5b7",
+          "move_san": "Rb7+",
+          "correct": true,
+          "policy_rank": 7,
+          "policy_prob": 0.04099403320453291,
+          "simulations": 1024,
+          "nn_evals": 631,
+          "elapsed_s": 0.9436214169982122,
+          "candidates": [
+            {
+              "action": 4830,
+              "move_uci": "h2g1",
+              "san": "Kg1",
+              "screen_visits": 159,
+              "alloc_sims": 192,
+              "post_visits": 351,
+              "q_root": 0.5129216367676005
+            },
+            {
+              "action": 13025,
+              "move_uci": "a6f6",
+              "san": "Rf6",
+              "screen_visits": 51,
+              "alloc_sims": 192,
+              "post_visits": 243,
+              "q_root": 0.41211492598915295
+            },
+            {
+              "action": 10750,
+              "move_uci": "b5g5",
+              "san": "Rg5",
+              "screen_visits": 44,
+              "alloc_sims": 192,
+              "post_visits": 236,
+              "q_root": 0.40724653660880117
+            },
+            {
+              "action": 10805,
+              "move_uci": "b5b7",
+              "san": "Rb7+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.6364426585831173
+            }
+          ],
+          "search_pv_san": [
+            "Kg1",
+            "Kf7",
+            "Rg5",
+            "Kf8",
+            "Rg3",
+            "Kf7"
+          ],
+          "feature_mode": "continuation"
+        }
+      },
+      "oracle_line_san": [
+        "Rb7+",
+        "Kf8",
+        "Ra8#"
+      ],
+      "refutations": {
+        "random": [
+          "Re6+",
+          "Kf8"
+        ],
+        "quality": [
+          "Kg1",
+          "Kf8"
+        ]
+      },
+      "explanation": "The exact verifier proved 1 root move force mate in 2 (b5b7), checking every legal defensive reply. Feature-diverse allocation explored 4 candidates: Kg1 (screen visits 159, 192 extra sims), Rf6 (screen visits 51, 192 extra sims), Rg5 (screen visits 44, 192 extra sims), Rb7+ (screen visits 0, 192 extra sims). It selected b5b7, which the raw network policy ranked #7 with probability 0.041. The verifier says this move DOES force mate within 2. Standard PUCT selected b5b7 (raw policy rank #7, p=0.041); verifier: solved. Refutation of the random choice: after Re6+ Black replies Kf8, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the quality choice: after Kg1 Black replies Kf8, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game.",
+      "result_ids": {
+        "standard": "eg00005-e0|standard|1024|0",
+        "quality": "eg00005-e0|quality|1024|0",
+        "random": "eg00005-e0|random|1024|0",
+        "feature": "eg00005-e0|feature|1024|0"
+      },
+      "best_solution_policy_rank": 7,
+      "best_solution_policy_prob": 0.04099403320453291
+    },
+    {
+      "case_id": "case07",
+      "category": "both_failed",
+      "category_title": "Neither method solved it",
+      "task_id": "eg00002-e0",
+      "family": "eg00002",
+      "source": "endgame",
+      "fen": "2k5/8/3R2K1/8/3Q4/8/8/8 w - - 2 2",
+      "side_to_move": "White",
+      "orientation": "White",
+      "mate_in": 2,
+      "horizon_plies": 3,
+      "num_legal_moves": 40,
+      "solution_moves": [
+        "d4g7",
+        "d6d7"
+      ],
+      "solution_sans": [
+        "Qg7",
+        "Rd7"
+      ],
+      "solver_status": "ok",
+      "methods": {
+        "standard": {
+          "move_uci": "g6g7",
+          "move_san": "Kg7",
+          "correct": false,
+          "policy_rank": 1,
+          "policy_prob": 0.484606933910105,
+          "simulations": 1024,
+          "nn_evals": 728,
+          "elapsed_s": 1.147850000001199,
+          "candidates": [],
+          "search_pv_san": [
+            "Kg7",
+            "Kc7",
+            "Rh6",
+            "Kb7",
+            "Qd8",
+            "Ka7"
+          ],
+          "feature_mode": "n/a"
+        },
+        "quality": {
+          "move_uci": "g6g7",
+          "move_san": "Kg7",
+          "correct": false,
+          "policy_rank": 1,
+          "policy_prob": 0.484606933910105,
+          "simulations": 1024,
+          "nn_evals": 644,
+          "elapsed_s": 0.9454366660065716,
+          "candidates": [
+            {
+              "action": 14990,
+              "move_uci": "g6g7",
+              "san": "Kg7",
+              "screen_visits": 148,
+              "alloc_sims": 192,
+              "post_visits": 340,
+              "q_root": 0.33054746324607337
+            },
+            {
+              "action": 13960,
+              "move_uci": "d6a6",
+              "san": "Ra6",
+              "screen_visits": 93,
+              "alloc_sims": 192,
+              "post_visits": 285,
+              "q_root": 0.2996792689586679
+            },
+            {
+              "action": 8845,
+              "move_uci": "d4b6",
+              "san": "Qb6",
+              "screen_visits": 15,
+              "alloc_sims": 192,
+              "post_visits": 207,
+              "q_root": -0.0
+            },
+            {
+              "action": 8760,
+              "move_uci": "d4a4",
+              "san": "Qa4",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.18447113892550873
+            }
+          ],
+          "search_pv_san": [
+            "Kg7",
+            "Kc7",
+            "Rh6",
+            "Kb7",
+            "Qd8",
+            "Ka7"
+          ],
+          "feature_mode": "n/a"
+        },
+        "random": {
+          "move_uci": "g6g7",
+          "move_san": "Kg7",
+          "correct": false,
+          "policy_rank": 1,
+          "policy_prob": 0.484606933910105,
+          "simulations": 1024,
+          "nn_evals": 567,
+          "elapsed_s": 0.8687482080058544,
+          "candidates": [
+            {
+              "action": 14990,
+              "move_uci": "g6g7",
+              "san": "Kg7",
+              "screen_visits": 148,
+              "alloc_sims": 192,
+              "post_visits": 340,
+              "q_root": 0.33054746324607337
+            },
+            {
+              "action": 14910,
+              "move_uci": "g6g5",
+              "san": "Kg5",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.3126211491234871
+            },
+            {
+              "action": 8880,
+              "move_uci": "d4a7",
+              "san": "Qa7",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": -0.0
+            },
+            {
+              "action": 8790,
+              "move_uci": "d4g4",
+              "san": "Qg4+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.20646597042081424
+            }
+          ],
+          "search_pv_san": [
+            "Kg7",
+            "Kc7",
+            "Rh6",
+            "Kb7",
+            "Qd8",
+            "Ka7"
+          ],
+          "feature_mode": "n/a"
+        },
+        "feature": {
+          "move_uci": "g6g7",
+          "move_san": "Kg7",
+          "correct": false,
+          "policy_rank": 1,
+          "policy_prob": 0.484606933910105,
+          "simulations": 1024,
+          "nn_evals": 632,
+          "elapsed_s": 0.9421890830053599,
+          "candidates": [
+            {
+              "action": 14990,
+              "move_uci": "g6g7",
+              "san": "Kg7",
+              "screen_visits": 148,
+              "alloc_sims": 192,
+              "post_visits": 340,
+              "q_root": 0.33054746324607337
+            },
+            {
+              "action": 13960,
+              "move_uci": "d6a6",
+              "san": "Ra6",
+              "screen_visits": 93,
+              "alloc_sims": 192,
+              "post_visits": 285,
+              "q_root": 0.2996792689586679
+            },
+            {
+              "action": 8845,
+              "move_uci": "d4b6",
+              "san": "Qb6",
+              "screen_visits": 15,
+              "alloc_sims": 192,
+              "post_visits": 207,
+              "q_root": -0.0
+            },
+            {
+              "action": 14055,
+              "move_uci": "d6d8",
+              "san": "Rd8+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.26162507282594133
+            }
+          ],
+          "search_pv_san": [
+            "Kg7",
+            "Kc7",
+            "Rh6",
+            "Kb7",
+            "Qd8",
+            "Ka7"
+          ],
+          "feature_mode": "continuation"
+        }
+      },
+      "oracle_line_san": [
+        "Qg7",
+        "Kb8",
+        "Rd8#"
+      ],
+      "refutations": {
+        "standard": [
+          "Kg7",
+          "Kb8"
+        ],
+        "feature": [
+          "Kg7",
+          "Kb8"
+        ],
+        "random": [
+          "Kg7",
+          "Kb8"
+        ],
+        "quality": [
+          "Kg7",
+          "Kb8"
+        ]
+      },
+      "explanation": "The exact verifier proved 2 root moves force mate in 2 (d4g7, d6d7), checking every legal defensive reply. Feature-diverse allocation explored 4 candidates: Kg7 (screen visits 148, 192 extra sims), Ra6 (screen visits 93, 192 extra sims), Qb6 (screen visits 15, 192 extra sims), Rd8+ (screen visits 0, 192 extra sims). It selected g6g7, which the raw network policy ranked #1 with probability 0.485. The verifier says this move does NOT force mate within 2. Standard PUCT selected g6g7 (raw policy rank #1, p=0.485); verifier: not a forced mate within horizon. Refutation of the standard choice: after Kg7 Black replies Kb8, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the feature choice: after Kg7 Black replies Kb8, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the random choice: after Kg7 Black replies Kb8, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the quality choice: after Kg7 Black replies Kb8, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game.",
+      "result_ids": {
+        "standard": "eg00002-e0|standard|1024|0",
+        "quality": "eg00002-e0|quality|1024|0",
+        "random": "eg00002-e0|random|1024|0",
+        "feature": "eg00002-e0|feature|1024|0"
+      },
+      "best_solution_policy_rank": 13,
+      "best_solution_policy_prob": 0.005144241288661142
+    },
+    {
+      "case_id": "case08",
+      "category": "both_failed",
+      "category_title": "Neither method solved it",
+      "task_id": "eg00014-e0",
+      "family": "eg00014",
+      "source": "endgame",
+      "fen": "7k/8/1R6/3K4/Q7/8/8/8 w - - 2 2",
+      "side_to_move": "White",
+      "orientation": "White",
+      "mate_in": 2,
+      "horizon_plies": 3,
+      "num_legal_moves": 43,
+      "solution_moves": [
+        "a4a7",
+        "a4d7",
+        "b6b7"
+      ],
+      "solution_sans": [
+        "Qa7",
+        "Qd7",
+        "Rb7"
+      ],
+      "solver_status": "ok",
+      "methods": {
+        "standard": {
+          "move_uci": "d5c6",
+          "move_san": "Kc6",
+          "correct": false,
+          "policy_rank": 6,
+          "policy_prob": 0.033964768342554595,
+          "simulations": 1024,
+          "nn_evals": 649,
+          "elapsed_s": 1.1122302090006997,
+          "candidates": [],
+          "search_pv_san": [
+            "Kc6",
+            "Kh7",
+            "Qa8",
+            "Kg7",
+            "Qf8+",
+            "Kh7"
+          ],
+          "feature_mode": "n/a"
+        },
+        "quality": {
+          "move_uci": "a4a8",
+          "move_san": "Qa8+",
+          "correct": false,
+          "policy_rank": 1,
+          "policy_prob": 0.37079993553940294,
+          "simulations": 1024,
+          "nn_evals": 750,
+          "elapsed_s": 1.1966172920001554,
+          "candidates": [
+            {
+              "action": 7960,
+              "move_uci": "a4a8",
+              "san": "Qa8+",
+              "screen_visits": 183,
+              "alloc_sims": 192,
+              "post_visits": 375,
+              "q_root": 0.27749686512118205
+            },
+            {
+              "action": 11415,
+              "move_uci": "d5d6",
+              "san": "Kd6",
+              "screen_visits": 38,
+              "alloc_sims": 192,
+              "post_visits": 230,
+              "q_root": 0.19702975104117523
+            },
+            {
+              "action": 7720,
+              "move_uci": "a4a2",
+              "san": "Qa2",
+              "screen_visits": 10,
+              "alloc_sims": 192,
+              "post_visits": 202,
+              "q_root": 0.20644877121223618
+            },
+            {
+              "action": 7830,
+              "move_uci": "a4g4",
+              "san": "Qg4",
+              "screen_visits": 10,
+              "alloc_sims": 192,
+              "post_visits": 202,
+              "q_root": 0.2540806160022569
+            }
+          ],
+          "search_pv_san": [
+            "Qa8+",
+            "Kh7",
+            "Rd6",
+            "Kg7",
+            "Qg8+",
+            "Kxg8"
+          ],
+          "feature_mode": "n/a"
+        },
+        "random": {
+          "move_uci": "a4a1",
+          "move_san": "Qa1+",
+          "correct": false,
+          "policy_rank": 28,
+          "policy_prob": 0.006427030601700706,
+          "simulations": 1024,
+          "nn_evals": 823,
+          "elapsed_s": 1.2861034589950577,
+          "candidates": [
+            {
+              "action": 7960,
+              "move_uci": "a4a8",
+              "san": "Qa8+",
+              "screen_visits": 183,
+              "alloc_sims": 192,
+              "post_visits": 375,
+              "q_root": 0.27749686512118205
+            },
+            {
+              "action": 7680,
+              "move_uci": "a4a1",
+              "san": "Qa1+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.4324736848601425
+            },
+            {
+              "action": 7825,
+              "move_uci": "a4f4",
+              "san": "Qf4",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.30856303285585396
+            },
+            {
+              "action": 13340,
+              "move_uci": "b6e6",
+              "san": "Re6",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.27918267206148933
+            }
+          ],
+          "search_pv_san": [
+            "Qa8+",
+            "Kh7",
+            "Rd6",
+            "Kg7",
+            "Qg8+",
+            "Kxg8"
+          ],
+          "feature_mode": "n/a"
+        },
+        "feature": {
+          "move_uci": "a4f4",
+          "move_san": "Qf4",
+          "correct": false,
+          "policy_rank": 23,
+          "policy_prob": 0.00978734897435405,
+          "simulations": 1024,
+          "nn_evals": 820,
+          "elapsed_s": 1.2543148339973413,
+          "candidates": [
+            {
+              "action": 7960,
+              "move_uci": "a4a8",
+              "san": "Qa8+",
+              "screen_visits": 183,
+              "alloc_sims": 192,
+              "post_visits": 375,
+              "q_root": 0.27749686512118205
+            },
+            {
+              "action": 11415,
+              "move_uci": "d5d6",
+              "san": "Kd6",
+              "screen_visits": 38,
+              "alloc_sims": 192,
+              "post_visits": 230,
+              "q_root": 0.19702975104117523
+            },
+            {
+              "action": 7825,
+              "move_uci": "a4f4",
+              "san": "Qf4",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.30856303285585396
+            },
+            {
+              "action": 7720,
+              "move_uci": "a4a2",
+              "san": "Qa2",
+              "screen_visits": 10,
+              "alloc_sims": 192,
+              "post_visits": 202,
+              "q_root": 0.20644877121223618
+            }
+          ],
+          "search_pv_san": [
+            "Qa8+",
+            "Kh7",
+            "Rd6",
+            "Kg7",
+            "Qg8+",
+            "Kxg8"
+          ],
+          "feature_mode": "continuation"
+        }
+      },
+      "oracle_line_san": [
+        "Qa7",
+        "Kg8",
+        "Rb8#"
+      ],
+      "refutations": {
+        "standard": [
+          "Kc6",
+          "Kg8"
+        ],
+        "feature": [
+          "Qf4",
+          "Kg8"
+        ],
+        "random": [
+          "Qa1+",
+          "Kg8"
+        ],
+        "quality": [
+          "Qa8+",
+          "Kh7"
+        ]
+      },
+      "explanation": "The exact verifier proved 3 root moves force mate in 2 (a4a7, a4d7, b6b7), checking every legal defensive reply. Feature-diverse allocation explored 4 candidates: Qa8+ (screen visits 183, 192 extra sims), Kd6 (screen visits 38, 192 extra sims), Qf4 (screen visits 0, 192 extra sims), Qa2 (screen visits 10, 192 extra sims). It selected a4f4, which the raw network policy ranked #23 with probability 0.010. The verifier says this move does NOT force mate within 2. Standard PUCT selected d5c6 (raw policy rank #6, p=0.034); verifier: not a forced mate within horizon. Refutation of the standard choice: after Kc6 Black replies Kg8, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the feature choice: after Qf4 Black replies Kg8, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the random choice: after Qa1+ Black replies Kg8, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the quality choice: after Qa8+ Black replies Kh7, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game.",
+      "result_ids": {
+        "standard": "eg00014-e0|standard|1024|0",
+        "quality": "eg00014-e0|quality|1024|0",
+        "random": "eg00014-e0|random|1024|0",
+        "feature": "eg00014-e0|feature|1024|0"
+      },
+      "best_solution_policy_rank": 20,
+      "best_solution_policy_prob": 0.010708968888149347
+    },
+    {
+      "case_id": "case09",
+      "category": "vs_random",
+      "category_title": "Feature-diverse allocation solved it, random allocation did not",
+      "task_id": "eg00041-e0",
+      "family": "eg00041",
+      "source": "endgame",
+      "fen": "8/8/8/k7/8/KR4Q1/8/8 w - - 2 2",
+      "side_to_move": "White",
+      "orientation": "White",
+      "mate_in": 2,
+      "horizon_plies": 3,
+      "num_legal_moves": 34,
+      "solution_moves": [
+        "g3b8",
+        "g3c7",
+        "g3e3",
+        "g3f2",
+        "g3f3",
+        "g3f4",
+        "g3g1",
+        "g3g2",
+        "g3g4",
+        "g3g8",
+        "g3h4"
+      ],
+      "solution_sans": [
+        "Qb8",
+        "Qc7+",
+        "Qe3",
+        "Qf2",
+        "Qf3",
+        "Qf4",
+        "Qg1",
+        "Qg2",
+        "Qg4",
+        "Qg8",
+        "Qh4"
+      ],
+      "solver_status": "ok",
+      "methods": {
+        "standard": {
+          "move_uci": "g3f3",
+          "move_san": "Qf3",
+          "correct": true,
+          "policy_rank": 3,
+          "policy_prob": 0.05033246018739014,
+          "simulations": 1024,
+          "nn_evals": 135,
+          "elapsed_s": 0.3058423330003279,
+          "candidates": [],
+          "search_pv_san": [
+            "Qf3",
+            "Ka6",
+            "Qb7+",
+            "Ka5",
+            "Rb5#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "quality": {
+          "move_uci": "g3f3",
+          "move_san": "Qf3",
+          "correct": true,
+          "policy_rank": 3,
+          "policy_prob": 0.05033246018739014,
+          "simulations": 1024,
+          "nn_evals": 409,
+          "elapsed_s": 0.7142404170008376,
+          "candidates": [
+            {
+              "action": 7290,
+              "move_uci": "g3c7",
+              "san": "Qc7+",
+              "screen_visits": 169,
+              "alloc_sims": 192,
+              "post_visits": 361,
+              "q_root": 0.3260438443500796
+            },
+            {
+              "action": 7145,
+              "move_uci": "g3f3",
+              "san": "Qf3",
+              "screen_visits": 73,
+              "alloc_sims": 192,
+              "post_visits": 265,
+              "q_root": 0.9783793934111326
+            },
+            {
+              "action": 7105,
+              "move_uci": "g3f2",
+              "san": "Qf2",
+              "screen_visits": 14,
+              "alloc_sims": 192,
+              "post_visits": 206,
+              "q_root": 0.7087323244268897
+            },
+            {
+              "action": 7155,
+              "move_uci": "g3h3",
+              "san": "Qh3",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.40128418713460623
+            }
+          ],
+          "search_pv_san": [
+            "Qc7+",
+            "Ka6",
+            "Qh2",
+            "Ka7",
+            "Qh7+",
+            "Ka8"
+          ],
+          "feature_mode": "n/a"
+        },
+        "random": {
+          "move_uci": "g3c3",
+          "move_san": "Qc3+",
+          "correct": false,
+          "policy_rank": 22,
+          "policy_prob": 0.003939042588199735,
+          "simulations": 1024,
+          "nn_evals": 573,
+          "elapsed_s": 1.018736666002951,
+          "candidates": [
+            {
+              "action": 7290,
+              "move_uci": "g3c7",
+              "san": "Qc7+",
+              "screen_visits": 169,
+              "alloc_sims": 192,
+              "post_visits": 361,
+              "q_root": 0.3260438443500796
+            },
+            {
+              "action": 7130,
+              "move_uci": "g3c3",
+              "san": "Qc3+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.9260359804092911
+            },
+            {
+              "action": 7060,
+              "move_uci": "g3e1",
+              "san": "Qe1+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.33527372064071326
+            },
+            {
+              "action": 7325,
+              "move_uci": "g3b8",
+              "san": "Qb8",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.3777215171875577
+            }
+          ],
+          "search_pv_san": [
+            "Qc7+",
+            "Ka6",
+            "Qh2",
+            "Ka7",
+            "Qh7+",
+            "Ka8"
+          ],
+          "feature_mode": "n/a"
+        },
+        "feature": {
+          "move_uci": "g3f3",
+          "move_san": "Qf3",
+          "correct": true,
+          "policy_rank": 3,
+          "policy_prob": 0.05033246018739014,
+          "simulations": 1024,
+          "nn_evals": 447,
+          "elapsed_s": 0.7314309590001358,
+          "candidates": [
+            {
+              "action": 7290,
+              "move_uci": "g3c7",
+              "san": "Qc7+",
+              "screen_visits": 169,
+              "alloc_sims": 192,
+              "post_visits": 361,
+              "q_root": 0.3260438443500796
+            },
+            {
+              "action": 7105,
+              "move_uci": "g3f2",
+              "san": "Qf2",
+              "screen_visits": 14,
+              "alloc_sims": 192,
+              "post_visits": 206,
+              "q_root": 0.7087323244268897
+            },
+            {
+              "action": 7145,
+              "move_uci": "g3f3",
+              "san": "Qf3",
+              "screen_visits": 73,
+              "alloc_sims": 192,
+              "post_visits": 265,
+              "q_root": 0.9783793934111326
+            },
+            {
+              "action": 5545,
+              "move_uci": "b3f3",
+              "san": "Rf3",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.42451979577423127
+            }
+          ],
+          "search_pv_san": [
+            "Qc7+",
+            "Ka6",
+            "Qh2",
+            "Ka7",
+            "Qh7+",
+            "Ka8"
+          ],
+          "feature_mode": "continuation"
+        }
+      },
+      "oracle_line_san": [
+        "Qb8",
+        "Ka6",
+        "Qa8#"
+      ],
+      "refutations": {
+        "random": [
+          "Qc3+",
+          "Ka6"
+        ]
+      },
+      "explanation": "The exact verifier proved 11 root moves force mate in 2 (g3b8, g3c7, g3e3, g3f2, g3f3, g3f4, g3g1, g3g2, g3g4, g3g8, g3h4), checking every legal defensive reply. Feature-diverse allocation explored 4 candidates: Qc7+ (screen visits 169, 192 extra sims), Qf2 (screen visits 14, 192 extra sims), Qf3 (screen visits 73, 192 extra sims), Rf3 (screen visits 0, 192 extra sims). It selected g3f3, which the raw network policy ranked #3 with probability 0.050. The verifier says this move DOES force mate within 2. Standard PUCT selected g3f3 (raw policy rank #3, p=0.050); verifier: solved. Refutation of the random choice: after Qc3+ Black replies Ka6, which survives the 2-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game.",
+      "result_ids": {
+        "standard": "eg00041-e0|standard|1024|0",
+        "quality": "eg00041-e0|quality|1024|0",
+        "random": "eg00041-e0|random|1024|0",
+        "feature": "eg00041-e0|feature|1024|0"
+      },
+      "best_solution_policy_rank": 1,
+      "best_solution_policy_prob": 0.5276698241118148
+    },
+    {
+      "case_id": "case10",
+      "category": "vs_random",
+      "category_title": "Feature-diverse allocation solved it, random allocation did not",
+      "task_id": "eg00053-e0",
+      "family": "eg00053",
+      "source": "endgame",
+      "fen": "6R1/8/6K1/k7/8/8/8/1R6 w - - 2 2",
+      "side_to_move": "White",
+      "orientation": "White",
+      "mate_in": 1,
+      "horizon_plies": 1,
+      "num_legal_moves": 30,
+      "solution_moves": [
+        "g8a8"
+      ],
+      "solution_sans": [
+        "Ra8#"
+      ],
+      "solver_status": "ok",
+      "methods": {
+        "standard": {
+          "move_uci": "g8d8",
+          "move_san": "Rd8",
+          "correct": false,
+          "policy_rank": 3,
+          "policy_prob": 0.12171873518400365,
+          "simulations": 1024,
+          "nn_evals": 241,
+          "elapsed_s": 0.378586874998291,
+          "candidates": [],
+          "search_pv_san": [
+            "Rd8",
+            "Ka4",
+            "Ra8#"
+          ],
+          "feature_mode": "n/a"
+        },
+        "quality": {
+          "move_uci": "g8d8",
+          "move_san": "Rd8",
+          "correct": false,
+          "policy_rank": 3,
+          "policy_prob": 0.12171873518400365,
+          "simulations": 1024,
+          "nn_evals": 719,
+          "elapsed_s": 1.066128458995081,
+          "candidates": [
+            {
+              "action": 20125,
+              "move_uci": "g8b8",
+              "san": "Rgb8",
+              "screen_visits": 222,
+              "alloc_sims": 192,
+              "post_visits": 414,
+              "q_root": 0.5310819047066756
+            },
+            {
+              "action": 345,
+              "move_uci": "b1f1",
+              "san": "Rf1",
+              "screen_visits": 14,
+              "alloc_sims": 192,
+              "post_visits": 206,
+              "q_root": 0.2086169900320633
+            },
+            {
+              "action": 20135,
+              "move_uci": "g8d8",
+              "san": "Rd8",
+              "screen_visits": 12,
+              "alloc_sims": 192,
+              "post_visits": 204,
+              "q_root": 0.9545640754239524
+            },
+            {
+              "action": 20110,
+              "move_uci": "g8g7",
+              "san": "Rg7",
+              "screen_visits": 8,
+              "alloc_sims": 192,
+              "post_visits": 200,
+              "q_root": 0.44841770817467475
+            }
+          ],
+          "search_pv_san": [
+            "Rgb8",
+            "Ka4",
+            "Kf6",
+            "Ka3",
+            "Rc1",
+            "Ka2"
+          ],
+          "feature_mode": "n/a"
+        },
+        "random": {
+          "move_uci": "b1b2",
+          "move_san": "Rb2",
+          "correct": false,
+          "policy_rank": 24,
+          "policy_prob": 0.0025843429519572425,
+          "simulations": 1024,
+          "nn_evals": 807,
+          "elapsed_s": 1.2234567920022528,
+          "candidates": [
+            {
+              "action": 20125,
+              "move_uci": "g8b8",
+              "san": "Rgb8",
+              "screen_visits": 222,
+              "alloc_sims": 192,
+              "post_visits": 414,
+              "q_root": 0.5310819047066756
+            },
+            {
+              "action": 485,
+              "move_uci": "b1b5",
+              "san": "Rb5+",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.3496964368649512
+            },
+            {
+              "action": 605,
+              "move_uci": "b1b8",
+              "san": "Rbb8",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.437989310932061
+            },
+            {
+              "action": 365,
+              "move_uci": "b1b2",
+              "san": "Rb2",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.678101803682783
+            }
+          ],
+          "search_pv_san": [
+            "Rgb8",
+            "Ka4",
+            "Kf6",
+            "Ka3",
+            "Rc1",
+            "Ka2"
+          ],
+          "feature_mode": "n/a"
+        },
+        "feature": {
+          "move_uci": "g8a8",
+          "move_san": "Ra8#",
+          "correct": true,
+          "policy_rank": 5,
+          "policy_prob": 0.040272985930868234,
+          "simulations": 1024,
+          "nn_evals": 748,
+          "elapsed_s": 1.1656682510001701,
+          "candidates": [
+            {
+              "action": 20125,
+              "move_uci": "g8b8",
+              "san": "Rgb8",
+              "screen_visits": 222,
+              "alloc_sims": 192,
+              "post_visits": 414,
+              "q_root": 0.5310819047066756
+            },
+            {
+              "action": 350,
+              "move_uci": "b1g1",
+              "san": "Rg1",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 0.1960983286211219
+            },
+            {
+              "action": 345,
+              "move_uci": "b1f1",
+              "san": "Rf1",
+              "screen_visits": 14,
+              "alloc_sims": 192,
+              "post_visits": 206,
+              "q_root": 0.2086169900320633
+            },
+            {
+              "action": 20120,
+              "move_uci": "g8a8",
+              "san": "Ra8#",
+              "screen_visits": 0,
+              "alloc_sims": 192,
+              "post_visits": 193,
+              "q_root": 1.0
+            }
+          ],
+          "search_pv_san": [
+            "Rgb8",
+            "Ka4",
+            "Kf6",
+            "Ka3",
+            "Rc1",
+            "Ka2"
+          ],
+          "feature_mode": "continuation"
+        }
+      },
+      "oracle_line_san": [
+        "Ra8#"
+      ],
+      "refutations": {
+        "standard": [
+          "Rd8",
+          "Ka6"
+        ],
+        "random": [
+          "Rb2",
+          "Ka6"
+        ],
+        "quality": [
+          "Rd8",
+          "Ka6"
+        ]
+      },
+      "explanation": "The exact verifier proved 1 root move force mate in 1 (g8a8), checking every legal defensive reply. Feature-diverse allocation explored 4 candidates: Rgb8 (screen visits 222, 192 extra sims), Rg1 (screen visits 0, 192 extra sims), Rf1 (screen visits 14, 192 extra sims), Ra8# (screen visits 0, 192 extra sims). It selected g8a8, which the raw network policy ranked #5 with probability 0.040. The verifier says this move DOES force mate within 1. Standard PUCT selected g8d8 (raw policy rank #3, p=0.122); verifier: not a forced mate within horizon. Refutation of the standard choice: after Rd8 Black replies Ka6, which survives the 1-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the random choice: after Rb2 Black replies Ka6, which survives the 1-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game. Refutation of the quality choice: after Rd8 Black replies Ka6, which survives the 1-move horizon, so the mate claim fails. This shows the task objective was missed; it is not a proof that the move loses the game.",
+      "result_ids": {
+        "standard": "eg00053-e0|standard|1024|0",
+        "quality": "eg00053-e0|quality|1024|0",
+        "random": "eg00053-e0|random|1024|0",
+        "feature": "eg00053-e0|feature|1024|0"
+      },
+      "best_solution_policy_rank": 5,
+      "best_solution_policy_prob": 0.040272985930868234
+    }
+  ]
+}

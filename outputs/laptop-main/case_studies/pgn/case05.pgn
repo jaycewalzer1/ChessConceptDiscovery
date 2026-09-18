@@ -1,0 +1,12 @@
+[Event "ChessConceptDiscovery case case05"]
+[Site "laptop-main"]
+[Date "????.??.??"]
+[Round "?"]
+[White "White"]
+[Black "Black"]
+[Result "*"]
+[FEN "1K6/1Q6/8/2R5/8/k7/8/8 w - - 2 2"]
+[SetUp "1"]
+[Annotator "exact forced-mate verifier"]
+
+2. Ra5# { verified forced mate in 1; complete solution set: c5a5 } *

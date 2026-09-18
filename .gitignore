@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# bulk artifacts: checkpoints, generated datasets, rendered figures
+outputs/*/checkpoints/
+outputs/*/data/
+outputs/*/figures/*.png
+outputs/*/results.jsonl
+outputs/*.console.log
+checkpoints/
+*.pkl
